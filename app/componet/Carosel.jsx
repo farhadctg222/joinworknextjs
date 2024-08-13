@@ -1,7 +1,7 @@
 
 import Image from 'next/image';
 
-import back3 from '/public/3.jpg'
+import back3 from '/public/123.jpg'
 
 
 

@@ -1,10 +1,14 @@
 import Carosel from "./componet/Carosel";
+import Charity from "./componet/Charity";
 
 
 
 export default function Home() {
   return (
-<Carosel></Carosel>
+    <div className="">
+        <Carosel></Carosel>
+         <Charity></Charity>
+</div>
   
   );
 }
