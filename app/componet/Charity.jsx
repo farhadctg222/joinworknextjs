@@ -1,7 +1,8 @@
-import back from '../assets/10.jpg'
-import back1 from '../assets/11.jpg'
+import back from '/public/1.jpg'
+import back1 from '/public/2.jpg'
 import { IoCalendarNumberSharp } from 'react-icons/io5';
 import { FaBookBible } from 'react-icons/fa6';
+import Image from 'next/image';
 
 const Charity = () => {
     return (
@@ -9,7 +10,7 @@ const Charity = () => {
         <section className='lg:flex md:flex flex flex-col justify-center  mt-20 gap-5'>
                 <div>
 
-                <img src={back} alt="" />
+                <Image src={back} alt=""></Image>
 
                     
                 </div>
@@ -22,7 +23,7 @@ const Charity = () => {
                 <h1 className='lg:text-5xl md:text-4xl text-3xl text-[#110a3a] font-bold  mb-4'>Join Our Charity & Fundraising Events For Social Impacts Organization</h1>
                 <button className='btn mb-4 btn-info'>See Events</button>
                 <div className='lg:relative'>
-                    <img src={back1} alt="" />
+                    <Image src={back1} alt=""></Image>
 
                 </div>
                 <div className='bg-white   lg:absolute lg:right-5 mb-10  lg:mt-[-300px]  '>

@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Foter from "./componet/Foter";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,7 +14,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
          <div className="sm:center md:center lg:center">
+          
         {children}
+        <Foter></Foter>
         </div>
         </body>
     </html>
