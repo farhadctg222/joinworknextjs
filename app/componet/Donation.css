@@ -1,0 +1,14 @@
+.background{
+    background-image: url('/123.jpg');
+   background-size:  cover;
+   background-position: center;
+   background-repeat: no-repeat;
+  
+   
+  }
+  .backgroundImage{
+    background-image: url('/4.jpg');
+    background-size:  cover;
+   background-position: center;
+   background-repeat: no-repeat;
+  }
