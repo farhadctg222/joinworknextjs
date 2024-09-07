@@ -1,10 +1,11 @@
 import React from 'react';
+import    './Donation.css'
 
 const Loading = () => {
     return (
-        <div>
-            loadding.......
-        </div>
+        <div className="loading-container">
+        <div className="spinner"></div>
+    </div>
     );
 };
 
