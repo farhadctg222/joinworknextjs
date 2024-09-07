@@ -32,7 +32,7 @@ const Carosel = () => {
             <div className="carousel w-full overflow-x-auto mb-5">
   
                 <div id="item3" className="carousel-item w-full relative">
-                    <Image src={back3} className="w-full    " />
+                    <Image src={back3} className="w-full "></Image>
                     <div className='absolute lg:top-32 p-8 w-full   bg-gradient-to-r from-[#1dfff01c] to-[#0de3ff9d] '>
                         <span>Join Work</span>
                         <h1 className='lg:text-6xl lg:text-wrap md:text-3xl m-5'> Announce<span className='text-[#8832f8]'> The Launch </span>Of <br />Our Join Work Program</h1>

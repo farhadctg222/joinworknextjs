@@ -43,7 +43,7 @@ const NewSection = () => {
                     </div>
                 </div>
                 <div className="card card-compact border-8 border-white w-96 bg-base-100 shadow-xl">
-                    <figure><img src={image2} alt="Shoes" /></figure>
+                    <figure><Image src={image2} alt="Shoes" ></Image></figure>
                     <div className=" p-10">
                        <div className=' p-5 hover:bg-[#261749] hover:text-white'>
                        <h2 className="card-title font-bold">Child Hope Funding</h2>
@@ -55,7 +55,7 @@ const NewSection = () => {
                     </div>
                 </div>
                 <div className="card card-compact border-8 border-white w-96 bg-base-100 shadow-xl">
-                    <figure><img src={image3} alt="Shoes" /></figure>
+                    <figure><Image src={image3} alt="Shoes"></Image></figure>
                     <div className=" p-10">
                        <div className=' p-5 hover:bg-[#261749] hover:text-white'>
                        <h2 className="card-title font-bold">Fundraising Gain</h2>
