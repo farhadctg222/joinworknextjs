@@ -4,6 +4,7 @@ import { FaArrowRight } from "react-icons/fa";
 import image1 from '/public/7.jpg'
 import image2 from '/public/7.jpg'
 import image3 from '/public/7.jpg'
+import Image from 'next/image';
 
 
 
@@ -30,7 +31,7 @@ const NewSection = () => {
             <div className=''>
             <div className='flex flex-1 flex-wrap lg:mt-[-90px] md:mt-[-90px] lg:flex md:flex  gap-4 justify-center  items-center'>
             <div className="card card-compact border-8 border-white w-96 bg-base-100 shadow-xl">
-                    <figure><img src={image1} alt="Shoes" /></figure>
+                    <figure><Image src={image1} alt="Shoes"></Image></figure>
                     <div className=" p-10">
                        <div className=' p-5 hover:bg-[#261749] hover:text-white'>
                        <h2 className="card-title font-bold">Non Profit Funding</h2>
