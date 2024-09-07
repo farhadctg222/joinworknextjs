@@ -31,7 +31,7 @@ const NewSection = () => {
             <div className=''>
             <div className='flex flex-1 flex-wrap lg:mt-[-90px] md:mt-[-90px] lg:flex md:flex  gap-4 justify-center  items-center'>
             <div className="card card-compact border-8 border-white w-96 bg-base-100 shadow-xl">
-                    <figure><Image src={image1} alt="Shoes"></Image></figure>
+                    <figure><Image src={image1} ></Image></figure>
                     <div className=" p-10">
                        <div className=' p-5 hover:bg-[#261749] hover:text-white'>
                        <h2 className="card-title font-bold">Non Profit Funding</h2>
