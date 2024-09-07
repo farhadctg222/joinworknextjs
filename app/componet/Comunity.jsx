@@ -18,11 +18,11 @@ const Comunity = () => {
                         <h1 className="lg:text-5xl md:text-4xl text-3xl font-bold">Lets Know How Our Community Give Impacts</h1>
                     </div>
                     <div>
-                        <p className='text-justify'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga tenetur, nobis quaerat laudantium debitis eum distinctio velit minus aspernatur nesciunt illo culpa exercitationem qui delectus quod possimus error tempore assumenda, commodi odit <br /> <br />inventore, magnam ducimus nemo officia. Mollitia, velit pariatur quo at tenetur voluptates delectus nobis exercitationem, minus, magnam nulla!</p>
+                        <p className='text-justify'>Understanding how our community's giving impacts our efforts is crucial for maximizing effectiveness and fostering engagement. Donations and grants enable us to address pressing needs, fund critical programs, and support initiatives that drive positive change. By analyzing the outcomes of our fundraising efforts, we can highlight tangible results, such as improved services, enhanced opportunities, and strengthened community ties. This not only demonstrates the value of each contribution but also builds trust and encourages continued support. Engaging with our community to share success stories and progress helps reinforce the meaningful difference their support makes, ensuring a sustainable and impactful partnership</p>
                     </div>
                     <div className='mb-5'>
-                        <h4 className=''><span className='mr-3'><FaCheck className='inline-flex text-[#324ce2]' /></span> Lorem ipsum dolor sit amet, consectetur adipisicing elit</h4>
-                        <h4 className=''><span className='mr-3'><FaCheck className='inline-flex text-[#324ce2] ' /></span> Lorem ipsum dolor sit amet, consectetur adipisicing elit</h4>
+                        <h4 className=''><span className='mr-3'><FaCheck className='inline-flex text-[#324ce2]' /></span> Community donations fund crucial programs and drive improvement.</h4>
+                        <h4 className=''><span className='mr-3'><FaCheck className='inline-flex text-[#324ce2] ' /></span>Showcasing impact strengthens relationships and encourages continued support.</h4>
 
 
                         <button className='btn btn-lg  btn-outline hover:btn-success mt-4'>Learn More</button>
