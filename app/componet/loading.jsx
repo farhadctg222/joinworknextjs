@@ -1,11 +1,11 @@
 import React from 'react';
-import    './Donation.css'
 
 const Loading = () => {
     return (
-        <div className="loading-container">
-        <div className="spinner"></div>
-    </div>
+            <div className="radial-progress text-primary" style={{ "--value": 70 }} role="progressbar">
+  70%
+</div>
+       
     );
 };
 

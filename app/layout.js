@@ -2,7 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Foter from "./componet/Foter";
 import { Suspense } from "react";
-import Loading from "./componet/loading";
+import loading from './loading'
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,16 +15,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className='p-3'>
+      <Suspense fallback={<loading></loading>}>
          <div className="sm:center md:center lg:center">
-      <Suspense fallback={<Loading></Loading>}>
-          
+ {children}
         
-        {children}
-        
-        </Suspense>
         <Foter></Foter>
        
         </div>
+        </Suspense>
         </body>
     </html>
   );
