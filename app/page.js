@@ -1,6 +1,6 @@
 
 
-import { Suspense } from "react";
+
 import Carosel from "./componet/Carosel";
 import Charity from "./componet/Charity";
 import JoinProgram from "./componet/JoinProgram";
@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <div className="">
       
-      <Suspense fallback={<Loading></Loading>}>
+      
         <Carosel></Carosel>
         <JoinProgram></JoinProgram>
         <Particularly></Particularly>
@@ -24,7 +24,7 @@ export default function Home() {
         <Comunity></Comunity>
         <NewSection></NewSection>
          <Charity></Charity>
-         </Suspense>
+        
         
 </div>
   

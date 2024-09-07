@@ -14,17 +14,18 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <Suspense fallback={<Loading></Loading>}>
       <body className='p-3'>
          <div className="sm:center md:center lg:center">
-          <Suspense fallback={<Loading></Loading>}>
+          
         
         {children}
-        </Suspense>
-      
+        
         <Foter></Foter>
        
         </div>
         </body>
+        </Suspense>
     </html>
   );
 }

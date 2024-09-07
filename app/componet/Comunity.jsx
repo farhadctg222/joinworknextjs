@@ -54,17 +54,17 @@ const Comunity = () => {
 
                     <div className='hover:shadow p-5 rounded-lg mb-3 border-l-4 border-l-slate-900 '>
                         <h1 className='lg:text-4xl md:text-4xl text-2xl mb-3 font-bold text-[#000]'>Give Funding Help</h1>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, voluptatem!</p>
+                        <p>Securing funding helps us advance our mission, support essential programs, and drive community impact. Your contributions enable meaningful progress and growth.</p>
                     </div>
 
                     <div className='hover:shadow p-5 rounded-lg mb-3 border-r-4 border-r-slate-900  '>
                         <h1 className='lg:text-4xl md:text-4xl text-2xl mb-3 font-bold text-[#000]'>Free Promotion By Us</h1>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, voluptatem!</p>
+                        <p>We offer free promotion for NGOs, helping to amplify your mission and reach a broader audience through our platforms</p>
                     </div>
 
                     <div className='hover:shadow p-5 rounded-lg mb-3 border-l-4 border-l-slate-900  '>
                         <h1 className='lg:text-4xl md:text-4xl text-2xl mb-3 font-bold text-[#000]'>Helping Many Peple</h1>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, voluptatem!</p>
+                        <p>Our efforts aim to help many people by supporting essential programs, driving positive change, and enhancing community well-being.</p>
                     </div>
 
                 </div>

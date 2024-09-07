@@ -33,9 +33,9 @@ const NewSection = () => {
             <div className="card card-compact border-8 border-white w-96 bg-base-100 shadow-xl">
                     <figure><Image src={image1} ></Image></figure>
                     <div className=" p-10">
-                       <div className=' p-5 hover:bg-[#261749] hover:text-white'>
+                       <div className=' p-5 transition duration-700 ease-in-out delay-150 hover:bg-[#261749] hover:text-white'>
                        <h2 className="card-title font-bold">Non Profit Funding</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, illum!</p>
+                        <p>Non-profit funding enables organizations to sustain their mission, expand services, and drive impactful community change through essential financial support</p>
     
                         <h5 className='text-[#3668d6] mt-2 hover:text-[#e5f559]' >Learn More  <span className='inline-flex my-auto'><FaArrowRight/></span></h5>
                        </div>
@@ -45,9 +45,9 @@ const NewSection = () => {
                 <div className="card card-compact border-8 border-white w-96 bg-base-100 shadow-xl">
                     <figure><Image src={image2} alt="Shoes" ></Image></figure>
                     <div className=" p-10">
-                       <div className=' p-5 hover:bg-[#261749] hover:text-white'>
+                       <div className=' p-5 transition duration-700 ease-in-out delay-150 hover:bg-[#261749] hover:text-white'>
                        <h2 className="card-title font-bold">Child Hope Funding</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, illum!</p>
+                        <p>Child Hope funding provides crucial support for programs that enhance children's well-being, education, and future opportunities, fostering a brighter future.</p>
     
                            <h5 className='text-[#3668d6] mt-2 hover:text-[#e5f559]' >Learn More  <span className='inline-flex my-auto'><FaArrowRight/></span></h5>
                        </div>
@@ -57,9 +57,9 @@ const NewSection = () => {
                 <div className="card card-compact border-8 border-white w-96 bg-base-100 shadow-xl">
                     <figure><Image src={image3} alt="Shoes"></Image></figure>
                     <div className=" p-10">
-                       <div className=' p-5 hover:bg-[#261749] hover:text-white'>
+                       <div className=' p-5 transition duration-700 ease-in-out delay-150 hover:bg-[#261749] hover:text-white'>
                        <h2 className="card-title font-bold">Fundraising Gain</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, illum!</p>
+                        <p>Fundraising gains provide vital resources to expand programs, support initiatives, and drive meaningful impact, ensuring continued growth and success.</p>
     
                         <h5 className='text-[#3668d6] mt-2 hover:text-[#e5f559]' >Learn More  <span className='inline-flex my-auto'><FaArrowRight/></span></h5>
                        </div>
