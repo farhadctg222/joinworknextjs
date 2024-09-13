@@ -1,10 +1,15 @@
 
 import './Donation.css'
 import { FaArrowRight } from "react-icons/fa";
-import image1 from '/public/7.jpg'
-import image2 from '/public/8.jpg'
-import image3 from '/public/8.jpg'
+import pic1 from '/public/8.jpg'
+import pic2 from '/public/78.jpg'
+
+
 import Image from 'next/image';
+
+
+
+
 
 
 
@@ -31,7 +36,7 @@ const NewSection = () => {
             <div className=''>
             <div className='flex flex-1 flex-wrap lg:mt-[-90px] md:mt-[-90px] lg:flex md:flex  gap-4 justify-center  items-center'>
             <div className="card card-compact border-8 border-white w-96 bg-base-100 shadow-xl">
-                    <figure><Image src={image1} ></Image></figure>
+                    <figure><Image src={pic1} ></Image></figure>
                     <div className=" p-10">
                        <div className=' p-5 transition duration-700 ease-in-out delay-150 hover:bg-[#261749] hover:text-white'>
                        <h2 className="card-title font-bold">Non Profit Funding</h2>
@@ -43,7 +48,7 @@ const NewSection = () => {
                     </div>
                 </div>
                 <div className="card card-compact border-8 border-white w-96 bg-base-100 shadow-xl">
-                    <figure><Image src={image2} alt="Shoes" ></Image></figure>
+                    <figure><Image src={pic2} alt="Shoes" ></Image></figure>
                     <div className=" p-10">
                        <div className=' p-5 transition duration-700 ease-in-out delay-150 hover:bg-[#261749] hover:text-white'>
                        <h2 className="card-title font-bold">Child Hope Funding</h2>
@@ -55,7 +60,7 @@ const NewSection = () => {
                     </div>
                 </div>
                 <div className="card card-compact border-8 border-white w-96 bg-base-100 shadow-xl">
-                    <figure><Image src={image3} alt="Shoes"></Image></figure>
+                    <figure><Image src={pic1} alt="Shoes"></Image></figure>
                     <div className=" p-10">
                        <div className=' p-5 transition duration-700 ease-in-out delay-150 hover:bg-[#261749] hover:text-white'>
                        <h2 className="card-title font-bold">Fundraising Gain</h2>
