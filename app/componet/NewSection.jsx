@@ -2,8 +2,8 @@
 import './Donation.css'
 import { FaArrowRight } from "react-icons/fa";
 import image1 from '/public/7.jpg'
-import image2 from '/public/7.jpg'
-import image3 from '/public/7.jpg'
+import image2 from '/public/8.jpg'
+import image3 from '/public/8.jpg'
 import Image from 'next/image';
 
 

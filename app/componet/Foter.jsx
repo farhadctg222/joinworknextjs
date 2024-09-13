@@ -8,23 +8,23 @@ const Foter = () => {
      <footer className="footer p-10 bg-[#0638616e] text-base-content">
   <nav>
     <h6 className="footer-title">Services</h6> 
-    <Link  href="/dashboard" className="link link-hover">Branding</Link>
-    <Link href="/dashboard" className="link link-hover">Design</Link>
-    <Link href="/dashboard" className="link link-hover">Marketing</Link>
-    <Link href="/dashboard" className="link link-hover">Advertisement</Link>
+    <Link  href="/dashboard" className="link underline link-hover">Branding</Link>
+    <Link href="/dashboard" className="link underline link-hover">Design</Link>
+    <Link href="/dashboard" className="link underline link-hover">Marketing</Link>
+    <Link href="/dashboard" className="link underline link-hover">Advertisement</Link>
   </nav> 
   <nav>
     <h6 className="footer-title">Company</h6> 
-    <Link href="/dashboard" className="link link-hover">About us</Link>
-    <Link href="/dashboard" className="link link-hover">Contact</Link>
-    <Link href="/dashboard" className="link link-hover">Jobs</Link>
-    <Link href="/dashboard" className="link link-hover">Press kit</Link>
+    <Link href="/dashboard" className="link underline link-hover">About us</Link>
+    <Link href="/dashboard" className="link underline link-hover">Contact</Link>
+    <Link href="/dashboard" className="link underline link-hover">Jobs</Link>
+    <Link href="/dashboard" className="link underline link-hover">Press kit</Link>
   </nav> 
   <nav>
     <h6 className="footer-title">Legal</h6> 
-    <Link href="/dashboard" className="link link-hover">Terms of use </Link>
-    <Link href="/dashboard" className="link link-hover">Privacy policy </Link>
-    <Link href="/dashboard" className="link link-hover">Cookie policy </Link>
+    <Link href="/dashboard" className="link underline link-hover">Terms of use </Link>
+    <Link href="/dashboard" className="link underline link-hover">Privacy policy </Link>
+    <Link href="/dashboard" className="link underline link-hover">Cookie policy </Link>
   </nav>
 </footer> 
 <footer className="footer px-10 py-4 border-t bg-base-200 text-base-content border-base-300">
