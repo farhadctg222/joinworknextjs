@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Committee = () => {
+const Header = () => {
     return (
         <div>
-            
+            home
         </div>
     );
 };
 
-export default Committee;
+export default Header;

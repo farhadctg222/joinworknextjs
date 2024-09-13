@@ -1,11 +1,8 @@
-import React from 'react';
 
-const loading = () => {
-    return (
-        <div className="radial-progress text-primary" style={{ "--value": 70 }} role="progressbar">
-  70%
-</div>
-    )
-};
+import Skelton from './componet/Skelton';
 
-export default loading;
+const Loading = () => {
+    return <Skelton></Skelton>
+}
+
+export default Loading;
