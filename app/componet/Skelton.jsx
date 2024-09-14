@@ -3,7 +3,7 @@ import    './Donation.css'
 
 const Skelton = () => {
     return (
-      <span className="loading loading-spinner text-success"></span>
+      <span className="loading loading-spinner text-center text-success"></span>
     );
 };
 

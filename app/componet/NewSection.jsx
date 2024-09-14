@@ -4,8 +4,6 @@ import { FaArrowRight } from "react-icons/fa";
 import pic1 from '/public/8.jpg'
 import pic2 from '/public/78.jpg'
 import pic3 from '/public/144.jpg'
-
-
 import Image from 'next/image';
 
 
@@ -27,6 +25,7 @@ const NewSection = () => {
                     </div>
                     <div className='text-center'>
                         <button className='btn  btn-info text-white lg:btn md:btn '>Discover <FaArrowRight /></button>
+                     
 
                     </div>
 
@@ -37,7 +36,7 @@ const NewSection = () => {
             <div className=''>
             <div className='flex flex-1 flex-wrap lg:mt-[-90px] md:mt-[-90px] lg:flex md:flex  gap-4 justify-center  items-center'>
             <div className="card card-compact border-8 border-white w-96 bg-base-100 shadow-xl">
-                    <figure><Image src={pic1} ></Image></figure>
+                    <figure><Image src={pic1} placeholder="blur" ></Image></figure>
                     <div className=" p-10">
                        <div className=' p-5 transition duration-700 ease-in-out delay-150 hover:bg-[#261749] hover:text-white'>
                        <h2 className="card-title font-bold">Non Profit Funding</h2>
@@ -49,7 +48,7 @@ const NewSection = () => {
                     </div>
                 </div>
                 <div className="card card-compact border-8 border-white w-96 bg-base-100 shadow-xl">
-                    <figure><Image src={pic2} alt="Shoes" ></Image></figure>
+                    <figure><Image src={pic2} placeholder="blur" alt="Child Donation" ></Image></figure>
                     <div className=" p-10">
                        <div className=' p-5 transition duration-700 ease-in-out delay-150 hover:bg-[#261749] hover:text-white'>
                        <h2 className="card-title font-bold">Child Hope Funding</h2>
@@ -61,7 +60,7 @@ const NewSection = () => {
                     </div>
                 </div>
                 <div className="card card-compact border-8 border-white w-96 bg-base-100 shadow-xl">
-                    <figure><Image src={pic3} alt="Shoes"></Image></figure>
+                    <figure><Image src={pic3} placeholder="blur" alt="Fundraising Gain"></Image></figure>
                     <div className=" p-10">
                        <div className=' p-5 transition duration-700 ease-in-out delay-150 hover:bg-[#261749] hover:text-white'>
                        <h2 className="card-title font-bold">Fundraising Gain</h2>
