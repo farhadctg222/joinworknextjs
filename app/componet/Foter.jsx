@@ -35,9 +35,9 @@ const Foter = () => {
   </aside> 
   <nav className="md:place-self-center md:justify-self-end">
     <div className="grid grid-flow-col gap-4">
-    <FaYoutube className="text-red-900  text-4xl " />   
-    <FaFacebook className="text-white-900    text-4xl"  />
-    <FaTwitter className=" text-blue-900  text-4xl"/>
+    <Link href="https://www.youtube.com/@farhadctg222"><FaYoutube className="text-[#FF0000]  text-4xl " />   </Link>
+   <Link href="https://www.facebook.com/profile.php?id=100006810542834"><FaFacebook className="text-[#1877F2]    text-4xl"  /></Link> 
+    <FaTwitter className=" text-[#1DA1F2]  text-4xl"/>
   </div>
   </nav>
 </footer>
