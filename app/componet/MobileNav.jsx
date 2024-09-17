@@ -8,19 +8,19 @@ const MobileNav = () => {
 
     const [isOpen, setopen ]= useState(false)
     return (
-        <>
-        <nav onClick={()=>setopen(true)}>
-            <FiAlignJustify />
-
-        <Sheet isOpen={!isOpen} onClose={() => setopen(false)}>
-        <Sheet.Container>
-          <Sheet.Header />
-          <Sheet.Content>hhhhh</Sheet.Content>
-        </Sheet.Container>
-        <Sheet.Backdrop />
+        <Sheet>
+        <SheetTrigger>Open</SheetTrigger>
+        <SheetContent className="w-[400px] sm:w-[540px]">
+          <SheetHeader>
+            <SheetTitle>Are you absolutely sure?</SheetTitle>
+            <SheetDescription>
+              This action cannot be undone. This will permanently delete your account
+              and remove your data from our servers.
+            </SheetDescription>
+          </SheetHeader>
+        </SheetContent>
       </Sheet>
-        </nav>
-        </>
+      
     );
 };
 
