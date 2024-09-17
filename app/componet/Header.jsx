@@ -3,6 +3,7 @@ import Link from 'next/link';
 
 import React from 'react';
 import Nav from './Nav';
+import MobileNav from './MobileNav';
 
 const Header = () => {
     return (
@@ -10,7 +11,7 @@ const Header = () => {
             <div className="container mx-auto flex justify-between  items-center">
                {/* logo */}
                 <Link href="/">
-                <h1 className=" ml-5  text-md text-sm text-xs text-lg font-semibold">
+                <h1 className=" ml-5 text-2xl md:text-lg md:text-md  font-semibold">
                     Join Work <span className="text-accent">.</span>
                 </h1>
                 </Link>
@@ -18,13 +19,13 @@ const Header = () => {
                 <div className=" hidden xl:flex items-center gap-3">
                     <Nav></Nav>
                     <Link href="/contact">
-                    <button className="bg-danger mr-5">Hire Me</button>
+                    <button className="btn text-white btn-success mr-5">Hire Me</button>
                     </Link>
 
                 </div>
                 {/* mobile nav */}
                 <div className="xl:hidden">
-                    mobile view
+                   <MobileNav></MobileNav>
 
                 </div>
                
