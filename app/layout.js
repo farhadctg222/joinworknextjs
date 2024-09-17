@@ -24,10 +24,10 @@ export default function RootLayout({ children }) {
         <Suspense fallback={<Loading></Loading>}>
 
          <div className="sm:center md:center lg:center">
-          <PageTransiton>
+          
 
               {children}
-              </PageTransiton>
+             
         
            </div>
         </Suspense>
