@@ -1,27 +1,42 @@
 'use client'
-import React, { useState } from 'react';
-import { FiAlignJustify } from "react-icons/fi";
-import { Sheet } from 'react-modal-sheet';
+
+import {usePathname} from "next/navigation";
+import {CiMenuFries} from "react-icons/ci"
+import { Sheet, SheetContent, SheetTrigger } from "./Sheet";
 
 
-const MobileNav = () => {
+const  MobileNav = ()=> {
+    const pathname = usePathname();
 
-    const [isOpen, setopen ]= useState(false)
-    return (
-        <Sheet>
-        <SheetTrigger>Open</SheetTrigger>
-        <SheetContent className="w-[400px] sm:w-[540px]">
-          <SheetHeader>
-            <SheetTitle>Are you absolutely sure?</SheetTitle>
-            <SheetDescription>
-              This action cannot be undone. This will permanently delete your account
-              and remove your data from our servers.
-            </SheetDescription>
-          </SheetHeader>
-        </SheetContent>
-      </Sheet>
-      
-    );
-};
 
+    const links = [
+        {
+            name: 'home',
+            path:'/'
+        },
+        {
+            name: 'service',
+            path:'/service'
+        },
+        {
+            name: 'blog',
+            path:'/blog'
+        },
+        {
+            name: 'contact',
+            path:'/contact'
+        }
+       
+    ]
+  return (
+   <Sheet>
+    <SheetTrigger className="flex justify-center items-center">
+        <CiMenuFries></CiMenuFries>
+    </SheetTrigger>
+    <SheetContent className="flex flex-col">
+      <div></div>
+    </SheetContent>
+   </Sheet>
+  );
+}
 export default MobileNav;

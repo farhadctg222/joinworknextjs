@@ -18,6 +18,10 @@ const Nav = () => {
             path:"/service"
         },
         {
+            name:'Blog',
+            path:"/blog"
+        },
+        {
             name:'Stuff',
             path:"/stuff"
         },

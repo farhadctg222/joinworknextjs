@@ -1,11 +1,11 @@
 import React from 'react';
 
-const PageTransiton = () => {
+const page = () => {
     return (
         <div>
-            
+            this is comming sooon
         </div>
     );
 };
 
-export default PageTransiton;
+export default page;
