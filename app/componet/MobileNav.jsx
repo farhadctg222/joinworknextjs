@@ -1,12 +1,12 @@
 'use client'
 
 import {usePathname} from "next/navigation";
-import {CiMenuFries} from "react-icons/ci"
-import { Sheet, SheetContent, SheetTrigger } from "./Sheet";
+import { IoMenu } from "react-icons/io5";
+import { SheetDemo } from "./Sheet";
+import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 
 
 const  MobileNav = ()=> {
-    const pathname = usePathname();
 
 
     const links = [
@@ -29,14 +29,19 @@ const  MobileNav = ()=> {
        
     ]
   return (
-   <Sheet>
-    <SheetTrigger className="flex justify-center items-center">
-        <CiMenuFries></CiMenuFries>
-    </SheetTrigger>
-    <SheetContent className="flex flex-col">
-      <div></div>
+    <Sheet>
+    <SheetTrigger><IoMenu></IoMenu></SheetTrigger>
+    <SheetContent className="w-[400px] sm:w-[540px]">
+      <SheetHeader>
+        <SheetTitle>Are you absolutely sure?</SheetTitle>
+        <SheetDescription>
+          This action cannot be undone. This will permanently delete your account
+          and remove your data from our servers.
+        </SheetDescription>
+      </SheetHeader>
     </SheetContent>
-   </Sheet>
+  </Sheet>
+  
   );
 }
 export default MobileNav;
