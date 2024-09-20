@@ -4,9 +4,11 @@ import {usePathname} from "next/navigation";
 import { IoMenu } from "react-icons/io5";
 import { SheetDemo } from "./Sheet";
 import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
+import Link from "next/link";
 
 
 const  MobileNav = ()=> {
+  const pathname = usePathname();
 
 
     const links = [
@@ -30,15 +32,23 @@ const  MobileNav = ()=> {
     ]
   return (
     <Sheet>
-    <SheetTrigger><IoMenu></IoMenu></SheetTrigger>
-    <SheetContent className="w-[400px] sm:w-[540px]">
-      <SheetHeader>
-        <SheetTitle>Are you absolutely sure?</SheetTitle>
-        <SheetDescription>
-          This action cannot be undone. This will permanently delete your account
-          and remove your data from our servers.
-        </SheetDescription>
-      </SheetHeader>
+    <SheetTrigger className="flex justify-center items-center">
+      <IoMenu className="text-[32px] text-accent">
+        </IoMenu>
+        </SheetTrigger>
+    <SheetContent className="flex flex-col">
+      
+       {/* loago */}
+        
+          <div className="mt-32 md-40 text-center text-md text-accent">
+            <Link href="/">
+            <h1>Join Work<span className="text-[#66fcc2]">.</span> </h1>
+            </Link>
+        
+
+          </div>
+      
+      
     </SheetContent>
   </Sheet>
   
