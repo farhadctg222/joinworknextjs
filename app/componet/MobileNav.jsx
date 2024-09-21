@@ -33,7 +33,7 @@ const  MobileNav = ()=> {
   return (
     <Sheet>
     <SheetTrigger className="flex justify-center items-center">
-      <IoMenu className="text-[60px] ">
+      <IoMenu className="text-[40px] ">
         </IoMenu>
         </SheetTrigger>
     <SheetContent className="flex flex-col">
@@ -54,10 +54,12 @@ const  MobileNav = ()=> {
                   <Link
                   href={links.path}
                   key={index}
-                  className={`${links.path === pathname && "text-accent border-b-2 border-accent"}  text-xl capitalize hover:text-accent transition-all `}>
+                  className={`${links.path === pathname && "text-accent border-b-2 border-accent"}  text-md text-sm text-[#37ff02] capitalize hover:text-accent transition-all `}>
                     {links.name}
+                    <Link href='/donation'><button className="btn btn-success">Donation</button></Link>
 
                   </Link>
+                 
                 )
               })
             }
