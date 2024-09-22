@@ -31,18 +31,19 @@ const  MobileNav = ()=> {
        
     ]
   return (
+
     <Sheet>
     <SheetTrigger className="flex justify-center items-center">
       <IoMenu className="text-[40px] ">
         </IoMenu>
         </SheetTrigger>
-    <SheetContent className="flex flex-col">
+    <SheetContent className="flex text-accent flex-col">
       
        {/* loago */}
         
           <div className="mt-32 md-40 text-center text-md text-accent">
             <Link href="/">
-            <h1>Join Work<span className="text-[#66fcc2]">.</span> </h1>
+            <h1 className="text-accent">Join Work<span className="text-[#66fcc2]">.</span> </h1>
             </Link>
         
 
@@ -51,12 +52,10 @@ const  MobileNav = ()=> {
             {
               links.map((links,index)=>{
                 return(
-                  <Link
-                  href={links.path}
+                  <Link href={links.path}
                   key={index}
-                  className={`${links.path === pathname && "text-accent border-b-2 border-accent"}  text-md text-sm text-[#37ff02] capitalize hover:text-accent transition-all `}>
+                  className={`${links.path === pathname && "text-[#37ff02] border-b-2 border-accent"}  text-md text-sm text-[#37ff02] capitalize hover:text-accent transition-all `}>
                     {links.name}
-                    <Link href='/donation'><button className="btn btn-success">Donation</button></Link>
 
                   </Link>
                  
@@ -64,6 +63,7 @@ const  MobileNav = ()=> {
               })
             }
           </nav>
+          <Link className="text-center" href="/"><button className="btn-sm btn btn-success ">Donation</button></Link>
       
       
     </SheetContent>
