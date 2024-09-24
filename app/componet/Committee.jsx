@@ -82,7 +82,7 @@ const Committee = () => {
                 </div> 
                 <div className="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
                     <a href="#">
-                    <Image src={pic3y} className="w-full rounded-lg sm:rounded-none sm:rounded-l-lg" placeholder="blur" alt="Child Donation" ></Image>
+                    <Image src={pic3} className="w-full rounded-lg sm:rounded-none sm:rounded-l-lg" placeholder="blur" alt="Child Donation" ></Image>
                     </a>
                     <div className="p-5">
                         <h3 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
