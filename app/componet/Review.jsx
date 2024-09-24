@@ -6,8 +6,8 @@ const Review = () => {
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
             <div className="flex flex-col items-center">
                 <div className="text-center">
-                    <p className="text-lg font-medium text-gray-600 font-pj">2,157 people have said how good Rareblocks</p>
-                    <h2 className="mt-4 text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl font-pj">Our happy clients say about us</h2>
+                    <p className="text-lg font-medium text-gray-600 font-pj">"Empowered and Inspired: How This NGO Transformed My Community and Changed Lives Through Compassionate Support and Sustainable Solutions."</p>
+                    <h2 className="mt-4 text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl font-pj">Our happy Team say about us</h2>
                 </div>
     
                 <div className="mt-8 text-center md:mt-16 md:order-3">
@@ -52,15 +52,15 @@ const Review = () => {
                                     </div>
     
                                     <blockquote className="flex-1 mt-8">
-                                        <p className="text-lg leading-relaxed text-gray-900 font-pj">“You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change.”</p>
+                                        <p className="text-lg leading-relaxed text-gray-900 font-pj">“কমিটির সদস্য হিসেবে যোগদান করে আমি অত্যন্ত গর্বিত। এই এনজিওর মাধ্যমে আমরা সমাজে ইতিবাচক পরিবর্তন আনতে সক্ষম হচ্ছি। সদস্যদের সঙ্গে সহযোগিতা করে কাজ করার অভিজ্ঞতা সত্যিই অনন্য, এবং প্রত্যেকের মতামত আমাদের কার্যক্রমকে আরও শক্তিশালী করছে”</p>
                                     </blockquote>
                                 </div>
     
                                 <div className="flex items-center mt-8">
-                                    <img className="flex-shrink-0 object-cover rounded-full w-11 h-11" src="https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/4/avatar-male-1.png" alt="" />
+                                    <img className="flex-shrink-0 object-cover rounded-full w-11 h-11" src="https://lh3.googleusercontent.com/a/ACg8ocIXCawE1VlzIn7yj-79CUxjMbK0qtW7sxERMBs3kMkIeO4tR9qr=s100-p-k-rw-no" alt="" />
                                     <div className="ml-4">
-                                        <p className="text-base font-bold text-gray-900 font-pj">Leslie Alexander</p>
-                                        <p className="mt-0.5 text-sm font-pj text-gray-600">Freelance React Developer</p>
+                                        <p className="text-base font-bold text-gray-900 font-pj">Mohammad Farhad Uddin</p>
+                                        <p className="mt-0.5 text-sm font-pj text-gray-600">CEO & Web Developer</p>
                                     </div>
                                 </div>
                             </div>
@@ -98,7 +98,7 @@ const Review = () => {
                                     </div>
     
                                     <blockquote className="flex-1 mt-8">
-                                        <p className="text-lg leading-relaxed text-gray-900 font-pj">“Simply the best. Better than all the rest. I’d recommend this product to beginners and advanced users.”</p>
+                                        <p className="text-lg leading-relaxed text-gray-900 font-pj">“কমিটির সদস্য হিসেবে যুক্ত হয়ে আমি সত্যিই উচ্ছ্বসিত! এই এনজিওর টিমের সঙ্গে কাজ করতে পারা এক চমৎকার সুযোগ। আমরা একসঙ্গে নতুন উদ্যোগ নিয়ে সমাজে পরিবর্তন আনছি, এবং প্রতিটি সদস্যের অবদান অসাধারণ!”</p>
                                     </blockquote>
                                 </div>
     
@@ -144,14 +144,14 @@ const Review = () => {
                                     </div>
     
                                     <blockquote className="flex-1 mt-8">
-                                        <p className="text-lg leading-relaxed text-gray-900 font-pj">“I cannot believe that I have got a brand new landing page after getting Omega. It was super easy to edit and publish.”</p>
+                                        <p className="text-lg leading-relaxed text-gray-900 font-pj"><span>“ </span>সদস্য হিসেবে যোগ দেওয়ার পর থেকে আমি নতুন দৃষ্টিকোণ পেয়েছি! এই এনজিওর সঙ্গে কাজ করে বুঝতে পারছি, ছোট ছোট উদ্যোগও বিশাল পরিবর্তন আনতে পারে। টিমের উৎসাহ এবং একতার মাধ্যমে আমরা সত্যিই কিছু ব্যতিক্রমী অর্জন করছি<span className="text-accent">”</span></p>
                                     </blockquote>
                                 </div>
     
                                 <div className="flex items-center mt-8">
                                     <img className="flex-shrink-0 object-cover rounded-full w-11 h-11" src="https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/4/avatar-female.png" alt="" />
                                     <div className="ml-4">
-                                        <p className="text-base font-bold text-gray-900 font-pj">Jenny Wilson</p>
+                                        <p className="text-base font-bold text-gray-900 font-pj">Ador Chowdhury Himu</p>
                                         <p className="mt-0.5 text-sm font-pj text-gray-600">Graphic Designer</p>
                                     </div>
                                 </div>

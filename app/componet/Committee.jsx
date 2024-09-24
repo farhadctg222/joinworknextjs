@@ -52,7 +52,7 @@ const Committee = () => {
                     </a>
                     <div className="p-5">
                         <h3 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                            <a href="#">Jese Leos</a>
+                            <a href="#">Ador Chowdhury Himu</a>
                         </h3>
                         <span className="text-gray-500 dark:text-gray-400">Social Worker</span>
                         <p className="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">Jese drives the technical strategy of the flowbite platform and brand.</p>
@@ -82,7 +82,7 @@ const Committee = () => {
                 </div> 
                 <div className="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
                     <a href="#">
-                    <Image src={pic3} className="w-full rounded-lg sm:rounded-none sm:rounded-l-lg" placeholder="blur" alt="Child Donation" ></Image>
+                    <Image src={pic3y} className="w-full rounded-lg sm:rounded-none sm:rounded-l-lg" placeholder="blur" alt="Child Donation" ></Image>
                     </a>
                     <div className="p-5">
                         <h3 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
