@@ -19,7 +19,7 @@ const Foter = () => {
     <Link href="/about" className="link underline link-hover">About us</Link>
     <Link href="/contact" className="link underline link-hover">Contact</Link>
     <Link href="/jobs" className="link underline link-hover">Jobs</Link>
-    <Link href="/jobs" className="link underline link-hover">আমাদের শপথ</Link>
+    <Link href="/promise" className="link underline link-hover">আমাদের শপথ</Link>
   </nav> 
   <nav>
     <h6 className="footer-title">Legal</h6> 
