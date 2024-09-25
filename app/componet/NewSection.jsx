@@ -5,6 +5,7 @@ import pic1 from '/public/8.jpg'
 import pic2 from '/public/78.jpg'
 import pic3 from '/public/144.jpg'
 import Image from 'next/image';
+import Link from 'next/link';
 
 
 
@@ -42,7 +43,7 @@ const NewSection = () => {
                        <h2 className="card-title font-bold">Non Profit Funding</h2>
                         <p>Non-profit funding enables organizations to sustain their mission, expand services, and drive impactful community change through essential financial support</p>
     
-                        <h5 className='text-[#3668d6] mt-2 hover:text-[#e5f559]' >Learn More  <span className='inline-flex my-auto'><FaArrowRight/></span></h5>
+                     <Link href="/NonProfite"> <h5 className='text-[#3668d6] mt-2 hover:text-[#e5f559]' >Learn More  <span className='inline-flex my-auto'><FaArrowRight/></span></h5></Link>  
                        </div>
                        
                     </div>

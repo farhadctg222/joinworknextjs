@@ -16,7 +16,7 @@ const Foter = () => {
   </nav> 
   <nav>
     <h6 className="footer-title">Company</h6> 
-    <Link href="/dashboard" className="link underline link-hover">About us</Link>
+    <Link href="/about" className="link underline link-hover">About us</Link>
     <Link href="/dashboard" className="link underline link-hover">Contact</Link>
     <Link href="/dashboard" className="link underline link-hover">Jobs</Link>
     <Link href="/dashboard" className="link underline link-hover">Press kit</Link>
