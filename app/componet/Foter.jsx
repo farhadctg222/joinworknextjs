@@ -9,17 +9,16 @@ const Foter = () => {
      <footer className="footer p-10 bg-[#0638616e] text-base-content">
   <nav>
     <h6 className="footer-title">Services</h6> 
-    <Link  href="/dashboard" className="link underline link-hover">Branding</Link>
-    <Link href="/dashboard" className="link underline link-hover">Design</Link>
-    <Link href="/dashboard" className="link underline link-hover">Marketing</Link>
+    <Link  href="/dashboard" className="link underline link-hover">Educational Services</Link>
+    <Link href="/dashboard" className="link underline link-hover">Women and Child Protection</Link>
+    <Link href="/dashboard" className="link underline link-hover">Volunteer and Community Engagement</Link>
     <Link href="/dashboard" className="link underline link-hover">Advertisement</Link>
   </nav> 
   <nav>
     <h6 className="footer-title">Company</h6> 
     <Link href="/about" className="link underline link-hover">About us</Link>
-    <Link href="/dashboard" className="link underline link-hover">Contact</Link>
-    <Link href="/dashboard" className="link underline link-hover">Jobs</Link>
-    <Link href="/dashboard" className="link underline link-hover">Press kit</Link>
+    <Link href="/contact" className="link underline link-hover">Contact</Link>
+    <Link href="/jobs" className="link underline link-hover">Jobs</Link>
   </nav> 
   <nav>
     <h6 className="footer-title">Legal</h6> 
