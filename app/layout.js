@@ -5,8 +5,6 @@ import Foter from "./componet/Foter";
 import { Suspense } from 'react';
 import Loading from './loading';
 import Header from "./componet/Header";
-import PageTransiton from "./componet/PageTransiton";
-import Review from "./componet/Review";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -32,7 +30,7 @@ export default function RootLayout({ children }) {
         
            </div>
         </Suspense>
-        <Review></Review>
+        
         <Foter></Foter>
        
         

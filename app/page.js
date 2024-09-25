@@ -9,6 +9,8 @@ import Donation from "./componet/Donation";
 import Comunity from "./componet/Comunity";
 import NewSection from './componet/NewSection';
 import Committee from "./componet/Committee";
+import Review from './componet/Review';
+import Sponser from './componet/Sponser';
 
 
 
@@ -17,6 +19,8 @@ export default function Home() {
     <div className="">
      
       
+
+      <Suspense fallback={<h1>Loading..........</h1>}>
       
         <Carosel></Carosel>
         <JoinProgram></JoinProgram>
@@ -24,8 +28,11 @@ export default function Home() {
         <Donation></Donation>
         <Comunity></Comunity>
         <NewSection></NewSection>
+        </Suspense>
          <Charity></Charity>
          <Committee></Committee>
+         <Sponser></Sponser>
+         <Review></Review>
 
 
 
