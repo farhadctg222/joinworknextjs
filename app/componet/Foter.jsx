@@ -6,7 +6,7 @@ const Foter = () => {
     return (
         <div>
      
-     <footer className="footer p-10 bg-[#0638616e] text-base-content">
+     <footer className="footer p-10 bg-[#0638617e] text-base-content">
   <nav>
     <h6 className="footer-title">Services</h6> 
     <Link  href="/dashboard" className="link underline link-hover">Educational Services</Link>
