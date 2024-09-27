@@ -5,6 +5,7 @@ const page = () => {
   // Form state
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
+  const [mobile, setMobile] = useState('');
   const [isDonor, setIsDonor] = useState(false);
   const [donationAmount, setDonationAmount] = useState('');
   const [isVolunteer, setIsVolunteer] = useState(false);
@@ -16,6 +17,7 @@ const page = () => {
     const formData = {
       name,
       email,
+      mobile,
       isDonor,
       donationAmount,
       isVolunteer,
@@ -61,6 +63,18 @@ const page = () => {
               placeholder="Your email address"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
+              required
+            />
+          </div>
+          <div className="mb-4">
+            <label htmlFor="name" className="block text-sm font-medium text-gray-700">Mobile Number</label>
+            <input
+              type="text"
+              id="name"
+              className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+              placeholder="+880"
+              value={mobile}
+              onChange={(e) => setMobile(e.target.value)}
               required
             />
           </div>
