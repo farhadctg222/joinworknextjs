@@ -28,6 +28,10 @@ const Nav = () => {
         {
             name:'Contact',
             path:"/contact"
+        },
+        {
+            name:'Login',
+            path:"/login"
         }
     ]
     

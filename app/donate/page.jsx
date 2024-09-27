@@ -25,18 +25,20 @@ const page = () => {
       </div>
       <div className="flex flex-wrap items-center justify-center space-x-4 space-y-4 sm:space-y-0 mb-6">
         <div className="flex flex-col items-center">
-          <Image src={bkash} alt="bKash" className="h-12 w-12"></Image>
+          <Image src={bkash} alt="bKash" className=""></Image>
           <span className="text-sm text-gray-600">bKash</span>
         </div>
-        <div className="flex flex-col items-center">
-          <Image src={bkash} alt="Rocket" className="h-12 w-12"></Image>
+        {/* <div className="flex flex-col items-center">
+          <Image src={bkash} alt="Rocket" className=""></Image>
           <span className="text-sm text-gray-600">Rocket</span>
         </div>
         <div className="flex flex-col items-center">
-          <Image src={bkash} alt="Nagad" className="h-12 w-12"></Image>
+          <Image src={bkash} alt="Nagad" className=""></Image>
           <span className="text-sm text-gray-600">Nagad</span>
-        </div>
+        </div> */}
       </div>
+      <h1 className="b-5 bg-green-600 shadow-xl">Bkash Number: 01305573617</h1>
+
 
       {/* Read Account Number Button */}
       <div className="text-center mt-4">

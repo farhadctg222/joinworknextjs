@@ -25,6 +25,10 @@ const  MobileNav = ()=> {
             path:'/blog'
         },
         {
+          name: 'Login',
+          path:'/login'
+      },
+        {
             name: 'contact',
             path:'/contact'
         }
