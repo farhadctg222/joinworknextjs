@@ -28,11 +28,12 @@ export default function Home() {
         <Donation></Donation>
         <Comunity></Comunity>
         <NewSection></NewSection>
-        </Suspense>
+       
          <Charity></Charity>
          <Committee></Committee>
          <Sponser></Sponser>
          <Review></Review>
+         </Suspense>
 
 
 

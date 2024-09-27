@@ -36,7 +36,7 @@ const NewSection = () => {
 
             <div className=''>
             <div className='flex flex-1 flex-wrap lg:mt-[-90px] md:mt-[-90px] lg:flex md:flex  gap-4 justify-center  items-center'>
-            <div className="card card-compact border-8 border-white w-96 bg-base-100 shadow-xl">
+            <div className="">
                     <figure><Image src={pic1} placeholder="blur" ></Image></figure>
                     <div className=" p-10">
                        <div className=' p-5 transition duration-700 ease-in-out delay-150 hover:bg-[#261749] hover:text-white'>
@@ -48,7 +48,7 @@ const NewSection = () => {
                        
                     </div>
                 </div>
-                <div className="card card-compact border-8 border-white w-96 bg-base-100 shadow-xl">
+                <div className="">
                     <figure><Image src={pic2} placeholder="blur" alt="Child Donation" ></Image></figure>
                     <div className=" p-10">
                        <div className=' p-5 transition duration-700 ease-in-out delay-150 hover:bg-[#261749] hover:text-white'>
@@ -61,7 +61,7 @@ const NewSection = () => {
                     </div>
                 </div>
                 
-                <div className="card card-compact border-8 border-white w-96 bg-base-100 shadow-xl">
+                <div className="">
                     <figure><Image src={pic3} placeholder="blur" alt="Fundraising Gain"></Image></figure>
                   
                     <div className=" p-10">
