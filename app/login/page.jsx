@@ -2,6 +2,13 @@
 import React from 'react';
 
 const  Login = () => {
+    const handleSubmit =  (e) =>{
+        e.prevenntDefauld()
+        const form = e.target.form
+        const email = form.value.email;
+        console.log(email)
+
+    }
     return (
         <>
         <div className="flex items-center justify-center min-h-screen bg-gray-100">
@@ -20,8 +27,7 @@ const  Login = () => {
               id="email"
               className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
               placeholder="Enter your email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
+              value='email'
               required
             ></input>
           </div>
@@ -35,8 +41,7 @@ const  Login = () => {
               id="password"
               className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
               placeholder="Enter your password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
+              value='password'
               required></input>
         
           </div>
@@ -53,16 +58,8 @@ const  Login = () => {
           <p className="text-sm text-gray-600">
             Don't have an account? <a href="/signup" className="text-blue-600 hover:underline">Sign up</a>
           </p>
-        </div>
-      </div>
-    </div>
-        <div className="flex items-center justify-center min-h-screen bg-gray-100">
-        <div className="bg-white p-8 rounded-lg shadow-lg max-w-sm w-full">
-          <h2 className="text-2xl font-bold mb-6 text-center text-gray-800">
-            Login to Your Account
-          </h2>
-          
-          <button
+        </div> <br />
+        <button
             className="w-full flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mb-4"
           >
             <svg
@@ -77,7 +74,6 @@ const  Login = () => {
             </svg>
             Login with Facebook
           </button>
-  
           <button
             className="w-full flex items-center justify-center bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
           >
@@ -93,8 +89,16 @@ const  Login = () => {
             </svg>
             Login with Google
           </button>
-        </div>
       </div>
+    </div>
+       
+          
+          
+         
+  
+        
+       
+      
       </>
     );
 };
