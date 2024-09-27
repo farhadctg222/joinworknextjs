@@ -38,7 +38,7 @@ const Carosel = () => {
                         <span>Join Work</span>
                         <h1 className='lg:text-6xl lg:text-wrap md:text-3xl m-5'> Announce<span className='text-[#8832f8]'> The Launch </span>Of <br />Our Join Work Program</h1>
                         <p className='lg:m-5 md:m-5 hidden'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum laborum dolorem dolor consequuntur quas quasi sapiente illo nam aut praesentium qui dolorum, nisi, vero, ipsam ab accusamus sunt modi tempore quae ullam cupiditate in? Facere ullam ut earum. Ex incidunt sit libero tempora expedita consequuntur hic eaque </p>
-                        <button className="btn btn-success ">Join Program</button>
+                        <Link href='/application'><button className="btn btn-success ">Apply Now</button></Link>
                      <Link href="/donate">   <button className="btn btn-primary text-accent ml-5">Donation Now</button></Link>
 
                     </div>
