@@ -1,5 +1,6 @@
 'use client'
 import React, { useState } from 'react';
+import Swal from 'sweetalert2';
 
 const page = () => {
   // Form state
@@ -12,7 +13,7 @@ const page = () => {
   const [profilePicture, setProfilePicture] = useState(null);
 
   // Handle form submission
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const formData = {
       name,
@@ -22,9 +23,26 @@ const page = () => {
       donationAmount,
       isVolunteer,
       profilePicture
-    };
-    console.log(formData);
-  };
+    }
+    console.log(formData)
+    fetch('http://localhost:3000/api/apply',{
+    method: 'POST',
+    headers: {
+      "content-type": "application/json"
+    },
+    body: JSON.stringify(formData)
+   })
+   .then(res=>res.json())
+   .then(data=>{
+    Swal.fire({
+      position: "top-end",
+      icon: "success",
+      title: "Your work has been saved",
+      showConfirmButton: false,
+      timer: 1500
+    });
+   })
+  }
 
   // Handle profile picture upload
   const handlePictureUpload = (e) => {
