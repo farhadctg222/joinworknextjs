@@ -1,4 +1,4 @@
-import Conectdb from "@/app/componet/Connectdb"
+import { Conectdb } from "@/app/componet/Connectdb"
 
 
 export const GET = async (request)=>{
