@@ -37,7 +37,7 @@ const page = () => {
     Swal.fire({
       position: "top-end",
       icon: "success",
-      title: "Your work has been saved",
+      title: "Your Application is Done",
       showConfirmButton: false,
       timer: 1500
     });
