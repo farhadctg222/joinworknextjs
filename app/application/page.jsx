@@ -1,4 +1,5 @@
 'use client'
+
 import React, { useState } from 'react';
 import Swal from 'sweetalert2';
 
@@ -25,7 +26,7 @@ const page = () => {
       profilePicture
     }
     console.log(formData)
-    fetch(`${NEXT_PUBLIC_BASE_API_URL}/apply`,{
+    fetch('https://joinwork-mohammad-farhads-projects-b62c2122.vercel.app/api/apply',{
     method: 'POST',
     headers: {
       "content-type": "application/json"
