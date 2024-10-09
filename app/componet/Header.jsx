@@ -1,4 +1,4 @@
-'use server'
+
 import Link from 'next/link';
 
 import React from 'react';
@@ -19,7 +19,7 @@ const Header = () => {
                 <div className=" hidden xl:flex items-center gap-3">
                     <Nav></Nav>
                     <Link href="/contact">
-                    <button className="btn text-white btn-success mr-5">Hire Me</button>
+                    <button className="btn text-white btn-success mr-5">Donation</button>
                     </Link>
 
                 </div>

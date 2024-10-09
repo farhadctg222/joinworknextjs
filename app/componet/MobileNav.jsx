@@ -8,9 +8,10 @@ import Link from "next/link";
 import { signOut, useSession } from "next-auth/react";
 
 
-const  MobileNav = ()=> {
+const  MobileNav =  ()=> {
   const pathname = usePathname();
   const session = useSession()
+  console.log(session)
   const handle = ()=>{
     signOut()
   }
@@ -29,10 +30,7 @@ const  MobileNav = ()=> {
             name: 'blog',
             path:'/blog'
         },
-        {
-          name: 'Login',
-          path:'/login'
-      },
+      
         {
             name: 'contact',
             path:'/contact'
@@ -47,7 +45,11 @@ const  MobileNav = ()=> {
         </IoMenu>
         </SheetTrigger>
     <SheetContent className="flex text-accent flex-col">
-      
+      <div className="text-center mt-20">
+
+     <h2 className="text-2xl text-green bg-white text-red-800" >{session?.data?.user?.name}</h2>
+     <h2>{session?.data?.user?.type}</h2>
+      </div>
        {/* loago */}
         
           <div className="mt-32 md-40 text-center text-md text-accent">
