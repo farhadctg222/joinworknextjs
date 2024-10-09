@@ -11,6 +11,7 @@ import NewSection from './componet/NewSection';
 import Committee from "./componet/Committee";
 import Review from './componet/Review';
 import Sponser from './componet/Sponser';
+import Blog from './blog/page';
 
 
 
@@ -34,6 +35,8 @@ export default function Home() {
          <Sponser></Sponser>
          <Review></Review>
          </Suspense>
+         <Blog></Blog>
+         
 
 
 
