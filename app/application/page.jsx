@@ -26,7 +26,7 @@ const page = () => {
       profilePicture
     }
     console.log(formData)
-    fetch('http://localhost:3000/api/apply',{
+    fetch(`${NEXT_PUBLIC_BASE_API_URL}/api/apply`,{
     method: 'POST',
     headers: {
       "content-type": "application/json"

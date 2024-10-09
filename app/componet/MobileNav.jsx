@@ -14,8 +14,7 @@ const  MobileNav = ()=> {
   const handle = ()=>{
     signOut()
   }
-  console.log(session)
-
+  
 
     const links = [
         {

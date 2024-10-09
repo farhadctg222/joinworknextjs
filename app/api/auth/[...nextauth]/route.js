@@ -1,52 +1,42 @@
-import Login from "@/app/login/page";
-import NextAuth from "next-auth";
-import CredentialsProvider from "next-auth/providers/credentials";
+import NextAuth from "next-auth"
+import CredentialProviders from "next-auth/providers/credentials"
 
-export const authOption = {
-    session: {
-        strategy: 'jwt'
+
+export const oauth = {
+    secret: process.env.NEXT_SECRET,
+    session:{
+        strategy:'jwt'
     },
     providers: [
-        CredentialsProvider(
-            {
-        credentials: {
-            email:
-            {
-                
-                label: "email",
-                type: "text",
-                require: true,
-                placeholder: "Your Email Here",
-                name: 'email'
-            },
-            password:
-            {
-                label: "password",
-                type: "password",
-                require: true,
-                placeholder: "Your password Here",
-                name:'password'
-            },
-           
+        CredentialProviders({
+        credentials:{
+            email:{label:"Email",type:"text", require:true,placeholder:'text'},
+            password:{label:"Password",type:"password", require:true,placeholder:'text'}
         },
-        async authorize(credentials) {
-           if(!credentials){
-            return null
+        async authorize (credentials) {
+            const {email,password}= credentials
+            if(!credentials){
+                return null
+            }
+           if(email){
+            const curren = user.find((users)=> users.email===email)
+            if(curren){
+                if(curren.password===password){
+                    return curren
+                }
+            }
            }
-           
-            
-           return true
+           return null
         }
-    })
-
-],
-
-    pages: {
-        Login
-
+    })],
+    pages:{
 
     }
 }
+const handler = NextAuth(oauth)
 
-const handel = NextAuth(authOption)
-export { handel as GET, handel as POST }
+const user = [
+    {name:'farhad',email: 'farhad@gmail.com',password:'farhad'},
+    {name:'farhad',email: 'far@gmail.com',password:'farhad'}
+]
+export {handler as GET, handler as POST}
