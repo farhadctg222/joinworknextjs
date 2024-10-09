@@ -12,7 +12,7 @@ const  MobileNav = ()=> {
   const pathname = usePathname();
   const session = useSession()
   const handle = ()=>{
-    LogOut()
+    signOut()
   }
   console.log(session)
 
@@ -73,7 +73,7 @@ const  MobileNav = ()=> {
               })
             }
           </nav>
-          {session.status === "authenticated" ? <Link className="text-center" href='' onclick={()=>signOut()}><button className="btn-sm btn btn-success ">LogOut</button></Link> :  <Link className="text-center" href="/api/auth/signin"><button className="btn-sm btn btn-success ">LogIn</button></Link>}
+          {session.status === "authenticated" ? <Link className="text-center" href='' onClick={handle}><button className="btn-sm btn btn-success ">LogOut</button></Link> :  <Link className="text-center" href="/api/auth/signin"><button className="btn-sm btn btn-success ">LogIn</button></Link>}
       
       
     </SheetContent>

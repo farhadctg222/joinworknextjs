@@ -30,10 +30,12 @@ export const authOption = {
            
         },
         async authorize(credentials) {
-            if (!credentials) {
-                return null
-            }
-            return true
+           if(!credentials){
+            return null
+           }
+           
+            
+           return true
         }
     })
 
