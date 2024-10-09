@@ -34,7 +34,12 @@ const  MobileNav =  ()=> {
         {
             name: 'contact',
             path:'/contact'
-        }
+        },
+        {
+          name: 'dashboard',
+          path:'/dashboard'
+      },
+
        
     ]
   return (
