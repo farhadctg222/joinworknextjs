@@ -5,10 +5,13 @@ import { IoMenu } from "react-icons/io5";
 import { SheetDemo } from "./Sheet";
 import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import Link from "next/link";
+import { useSession } from "next-auth/react";
 
 
 const  MobileNav = ()=> {
   const pathname = usePathname();
+  const session = useSession()
+  console.log(session)
 
 
     const links = [

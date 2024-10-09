@@ -1,14 +1,14 @@
 import { Conectdb } from "@/app/componet/Connectdb"
-
+import { NextResponse } from "next/server"
 
 export const GET = async (request)=>{
-    const data = await request.json()
+ 
+  
+    const dabase  = await Conectdb()
+    
+    
+    const bookcollection = await dabase.collection('data')
+    const res1 = await bookcollection.find({}).toArray()
    
-    const database = await Conectdb()
-   const alldata = await database.find(data).toArray()
-   console.log(alldata)
-
-    return Response.json({
-      alldata
-    })
+    return NextResponse.json(res1)
 }

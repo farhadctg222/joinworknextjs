@@ -5,6 +5,7 @@ import Foter from "./componet/Foter";
 import { Suspense } from 'react';
 import Loading from './loading';
 import Header from "./componet/Header";
+import AuthProvider from "./componet/AuthProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,6 +17,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <AuthProvider>
       <body className='p-3'>
         <Header></Header>
 
@@ -35,6 +37,7 @@ export default function RootLayout({ children }) {
        
         
         </body>
+        </AuthProvider>
     </html>
   );
 }

@@ -3,10 +3,11 @@ import React from 'react';
 
 const  Login = () => {
     const handleSubmit =  (e) =>{
-        e.prevenntDefauld()
+        e.preventDefault()
         const form = e.target.form
         const email = form.value.email;
-        console.log(email)
+        const password = form.value.password;
+        console.log(email,password)
 
     }
     return (
@@ -17,7 +18,7 @@ const  Login = () => {
           Login
         </h2>
 
-        <form onSubmit={handleSubmit}>
+        <form onChange={handleSubmit}>
           <div className="mb-4">
             <label htmlFor="email" className="block text-sm font-medium text-gray-700">
               Email

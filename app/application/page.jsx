@@ -26,7 +26,7 @@ const page = () => {
       profilePicture
     }
     console.log(formData)
-    fetch('https://joinwork-mohammad-farhads-projects-b62c2122.vercel.app/api/apply',{
+    fetch('http://localhost:3000/api/apply',{
     method: 'POST',
     headers: {
       "content-type": "application/json"
