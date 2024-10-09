@@ -2,8 +2,7 @@ import Login from "@/app/login/page";
 import NextAuth from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
 
-
-const handel = NextAuth({
+export const authOption = {
     session: {
         strategy: 'jwt'
     },
@@ -45,5 +44,7 @@ const handel = NextAuth({
 
 
     }
-})
+}
+
+const handel = NextAuth(authOption)
 export { handel as GET, handel as POST }

@@ -5,12 +5,15 @@ import { IoMenu } from "react-icons/io5";
 import { SheetDemo } from "./Sheet";
 import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import Link from "next/link";
-import { useSession } from "next-auth/react";
+import { signOut, useSession } from "next-auth/react";
 
 
 const  MobileNav = ()=> {
   const pathname = usePathname();
   const session = useSession()
+  const handle = ()=>{
+    LogOut()
+  }
   console.log(session)
 
 
@@ -70,7 +73,7 @@ const  MobileNav = ()=> {
               })
             }
           </nav>
-          <Link className="text-center" href="/"><button className="btn-sm btn btn-success ">Donation</button></Link>
+          {session.status === "authenticated" ? <Link className="text-center" href='' onclick={()=>signOut()}><button className="btn-sm btn btn-success ">LogOut</button></Link> :  <Link className="text-center" href="/api/auth/signin"><button className="btn-sm btn btn-success ">LogIn</button></Link>}
       
       
     </SheetContent>
