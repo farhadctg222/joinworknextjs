@@ -26,7 +26,7 @@ const page = () => {
       profilePicture
     }
     console.log(formData)
-    fetch(`${NEXT_PUBLIC_BASE_API_URL}api/apply`,{
+    fetch(`${process.env.NEXT_PUBLIC_BASE_API_URL}api/apply`,{
     method: 'POST',
     headers: {
       "content-type": "application/json"
@@ -35,10 +35,11 @@ const page = () => {
    })
    .then(res=>res.json())
    .then(data=>{
+    console.log(data)
     Swal.fire({
       position: "top-end",
       icon: "success",
-      title: "Your Application is Done",
+      title:  'Successfully Done',
       showConfirmButton: false,
       timer: 1500
     });
@@ -51,7 +52,7 @@ const page = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
+    <div className="flex items-center justify-center min-h-screen bg-gray-200">
       <div className="bg-white p-6 sm:p-8 md:p-10 rounded-lg shadow-lg w-full max-w-md">
         <h2 className="text-2xl md:text-3xl font-bold mb-6 text-center text-gray-800">
           Join Our Charity Organization
@@ -91,7 +92,7 @@ const page = () => {
               type="text"
               id="name"
               className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-              placeholder="+880"
+              placeholder="01305573617"
               value={mobile}
               onChange={(e) => setMobile(e.target.value)}
               required

@@ -54,7 +54,7 @@ const  MobileNav =  ()=> {
       <div className="text-center mt-20">
      <h2 className="text-2xl text-green bg-white text-red-800" >{session?.data?.user?.name}</h2>
      <h2>{session?.data?.user?.type}</h2>
-       {session?.data?.user?.image && <Image width={50} height={50} className='m-auto mt-5'   src={session?.data?.user?.image}></Image>}
+       {session?.data?.user?.image && <Image alt={session?.data?.user?.name} width={50} height={50} className='m-auto mt-5'   src={session?.data?.user?.image}></Image>}
       </div>
        {/* loago */}
         
