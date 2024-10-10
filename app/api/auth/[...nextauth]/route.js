@@ -1,3 +1,4 @@
+import { Conectdb } from "@/app/componet/Connectdb"
 import NextAuth from "next-auth"
 import CredentialProviders from "next-auth/providers/credentials"
 
@@ -10,8 +11,8 @@ export const oauth = {
     providers: [
         CredentialProviders({
         credentials:{
-            email:{label:"Email",type:"text", require:true,placeholder:'text'},
-            password:{label:"Password",type:"password", require:true,placeholder:'text'}
+            email:{label:"Email",type:"email", require:true, placeholder:'text'},
+            password:{label:"Password", type:"password", require:true, placeholder:'text'}
         },
         async authorize (credentials) {
             const {email,password}= credentials
@@ -19,10 +20,13 @@ export const oauth = {
                 return null
             }
            if(email){
-            const curren = user.find((users)=> users.email===email)
-            if(curren){
-                if(curren.password===password){
-                    return curren
+            const database =await Conectdb()
+            const user = await database.collection('user').findOne({email})
+            // const curren = user.find((users)=> users.email===email)
+         console.log(user)
+            if(user){
+                if(user.password===password){
+                    return user
                 }
             }
            }
@@ -54,27 +58,27 @@ export const oauth = {
 }
 const handler = NextAuth(oauth)
 
-const user = [
-    {name:'farhad',
-        email: 'farhad@gmail.com',
-        password:'farhad',
-        type: 'admin',
-        image:'https://lh3.googleusercontent.com/a/ACg8ocIXCawE1VlzIn7yj-79CUxjMbK0qtW7sxERMBs3kMkIeO4tR9qr=s100-p-k-rw-no'
+// const user = [
+//     {name:'farhad',
+//         email: 'farhad@gmail.com',
+//         password:'farhad',
+//         type: 'admin',
+//         image:'https://lh3.googleusercontent.com/a/ACg8ocIXCawE1VlzIn7yj-79CUxjMbK0qtW7sxERMBs3kMkIeO4tR9qr=s100-p-k-rw-no'
 
-    },
-    {name:'sakib',
-        email: 'far@gmail.com',
-        password:'farhad',
-        type: 'moderator',
-        image:'https://lh3.googleusercontent.com/a/ACg8ocIXCawE1VlzIn7yj-79CUxjMbK0qtW7sxERMBs3kMkIeO4tR9qr=s100-p-k-rw-no'
-    },
-    {name:'solaiman',
-        email: 'solaiman@gmail.com',
-        password:'farhad',
-        type: 'executive',
-         image:'https://lh3.googleusercontent.com/a/ACg8ocIXCawE1VlzIn7yj-79CUxjMbK0qtW7sxERMBs3kMkIeO4tR9qr=s100-p-k-rw-no'
-    }
-]
+//     },
+//     {name:'sakib',
+//         email: 'far@gmail.com',
+//         password:'farhad',
+//         type: 'moderator',
+//         image:'https://lh3.googleusercontent.com/a/ACg8ocIXCawE1VlzIn7yj-79CUxjMbK0qtW7sxERMBs3kMkIeO4tR9qr=s100-p-k-rw-no'
+//     },
+//     {name:'solaiman',
+//         email: 'solaiman@gmail.com',
+//         password:'farhad',
+//         type: 'executive',
+//          image:'https://lh3.googleusercontent.com/a/ACg8ocIXCawE1VlzIn7yj-79CUxjMbK0qtW7sxERMBs3kMkIeO4tR9qr=s100-p-k-rw-no'
+//     }
+// ]
 
 
 

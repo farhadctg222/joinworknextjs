@@ -6,7 +6,7 @@ export const middleware = async (request)=>{
     if(!token){
         return NextResponse.redirect(new URL('/api/auth/signin',request.url))
     }
-    return NextResponse.next()
+  
 }
-export const config = {matcher: ["/dashboard"]}
-console.log('hello')
+export const config = {matcher: ["/dashboard/:path*"]}
+console.log('hello',token,coki)
