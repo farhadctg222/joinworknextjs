@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import back from '/public/1234.jpg'
 import { FaCheck } from "react-icons/fa"
+import Link from 'next/link';
 
 
 
@@ -29,7 +30,7 @@ const Particularly = () => {
                   <h4 className=''><span className='mr-3'><FaCheck className='inline-flex text-[#324ce2] '/></span> Use a mix of methods such as events, campaigns, and online platforms to reach diverse donor bases</h4>
                     </div>
 
-                  <button className='btn bg-[#2567f5] text-white'>Learn More</button>
+               <Link href='/giveImpects' >  <button className='btn bg-[#2567f5] text-white'>Learn More</button></Link> 
 
 
                 </div>

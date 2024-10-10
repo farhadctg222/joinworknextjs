@@ -1,4 +1,6 @@
+'use client'
 import React from 'react';
+import {useEffect,useState} from 'react';
 
 import { Suspense } from 'react'
 import Carosel from "./componet/Carosel";
@@ -16,11 +18,22 @@ import Blog from './blog/page';
 
 
 export default function Home() {
+  const [show,setSho] = useState(true)
+  useEffect(()=>{
+    const time = setTimeout(()=>{
+      setSho(false)
+    },5000)
+    return ()=> clearTimeout(time)
+  },[])
   return (
+    
     <div className="">
+    {show ? (
+      <h1 className='text-center text-2xl text-blue-600 mb-4'>welcome to  website</h1>
+    ):
      
-      
 
+      (
       <Suspense fallback={<h1>Loading..........</h1>}>
       
         <Carosel></Carosel>
@@ -34,17 +47,24 @@ export default function Home() {
          <Committee></Committee>
          <Sponser></Sponser>
          <Review></Review>
-         </Suspense>
+
+
          <Blog></Blog>
+
+
+
+         </Suspense>
+        )}
          
 
 
 
+      
 
        
         
         
 </div>
   
-  );
+);
 }

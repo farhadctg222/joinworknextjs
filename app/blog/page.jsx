@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const Blog = () => {
     return (
-        <aside aria-label="Related articles" class="py-8 lg:py-24 bg-gray-50 flex items-center dark:bg-gray-800">
+        <aside aria-label="Related articles" class="py-8 m-auto lg:py-24 bg-gray-50 flex items-center dark:bg-gray-800">
   <div class="px-4 mx-auto max-w-screen-xl">
       <h2 class="mb-8 text-2xl font-bold text-gray-900 dark:text-white">Recently articles</h2>
       <div class="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
@@ -61,7 +61,7 @@ const Blog = () => {
           </article>
       </div>
   </div>
-  <h1>Read More</h1>
+  
 </aside>
     );
 };
