@@ -28,7 +28,7 @@ export default function Home() {
       localStorage.setItem('hasvisited',true)
     }
     const time = setTimeout(()=>{
-      setSho(false)
+      setSho(true)
     },1000)
     return ()=> clearTimeout(time)
    
