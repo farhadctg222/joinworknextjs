@@ -22,14 +22,14 @@ export default function Home() {
   useEffect(()=>{
     const time = setTimeout(()=>{
       setSho(false)
-    },5000)
+    },4000)
     return ()=> clearTimeout(time)
   },[])
   return (
     
     <div className="">
     {show ? (
-      <h1 className='text-center text-2xl text-blue-600 mb-4'>welcome to  website</h1>
+      <h1 className='opacity[1] text-center text-2xl text-blue-600 mb-4'>welcome to  website</h1>
     ):
      
 

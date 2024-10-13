@@ -9,4 +9,3 @@ export const middleware = async (request)=>{
   
 }
 export const config = {matcher: ["/dashboard/:path*"]}
-console.log('hello',token,coki)
