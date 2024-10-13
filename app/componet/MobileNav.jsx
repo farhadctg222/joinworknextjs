@@ -11,7 +11,6 @@ import Image from "next/image";
 const  MobileNav =  ()=> {
   const pathname = usePathname();
   const session = useSession()
-  console.log(session)
   const handle = ()=>{
     signOut()
   }
