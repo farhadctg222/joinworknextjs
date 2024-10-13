@@ -14,22 +14,30 @@ import Committee from "./componet/Committee";
 import Review from './componet/Review';
 import Sponser from './componet/Sponser';
 import Blog from './blog/page';
+import Image from 'next/image';
+import ads from '/public/adsBanner.jpg'
 
 
 
 export default function Home() {
   const [show,setSho] = useState(true)
   useEffect(()=>{
+    const hasvisited = localStorage.getItem('hasVisite')
+    if(!hasvisited){
+      setSho(false)
+      localStorage.setItem('hasvisited',true)
+    }
     const time = setTimeout(()=>{
       setSho(false)
     },4000)
     return ()=> clearTimeout(time)
+   
   },[])
   return (
     
     <div className="">
     {show ? (
-      <h1 className='opacity[1] text-center text-2xl text-blue-600 mb-4'>welcome to  website</h1>
+      <Image src={ads} alt='ads Banner'></Image>
     ):
      
 
