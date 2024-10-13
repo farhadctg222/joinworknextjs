@@ -20,7 +20,7 @@ import ads from '/public/adsBanner.jpg'
 
 
 export default function Home() {
-  const [show,setSho] = useState(true)
+  const [show,setSho] = useState(false)
   useEffect(()=>{
     const adInterval = setInterval(()=>{
       setSho(true)
