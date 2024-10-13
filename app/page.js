@@ -22,14 +22,14 @@ import ads from '/public/adsBanner.jpg'
 export default function Home() {
   const [show,setSho] = useState(true)
   useEffect(()=>{
-    const hasvisited = localStorage.getItem('hasVisite')
-    if(!hasvisited){
-      setSho(false)
-      localStorage.setItem('hasvisited',true)
-    }
+    // const hasvisited = localStorage.getItem('hasVisite')
+    // if(!hasvisited){
+    //   setSho(false)
+    //   localStorage.setItem('hasvisited',true)
+    // }
     const time = setTimeout(()=>{
       setSho(true)
-    },1000)
+    },7000)
     return ()=> clearTimeout(time)
    
   },[])
