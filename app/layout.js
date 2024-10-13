@@ -6,7 +6,6 @@ import { Suspense } from 'react';
 import Loading from './loading';
 import Header from "./componet/Header";
 import AuthProvider from "./componet/AuthProvider";
-import Home from "./page";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,7 +14,7 @@ export const metadata = {
   description: "Join Work Together",
 };
 
-export default function RootLayout({ children}) {
+export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <AuthProvider>
@@ -27,7 +26,7 @@ export default function RootLayout({ children}) {
 
          <div className="sm:center md:center lg:center">
           
-<Home></Home>
+
               {children}
              
         
