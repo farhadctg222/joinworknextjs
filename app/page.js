@@ -29,7 +29,7 @@ export default function Home() {
     }
     const time = setTimeout(()=>{
       setSho(false)
-    },4000)
+    },1000)
     return ()=> clearTimeout(time)
    
   },[])
