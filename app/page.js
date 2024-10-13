@@ -22,25 +22,24 @@ import ads from '/public/adsBanner.jpg'
 export default function Home() {
   const [show,setSho] = useState(false)
   useEffect(()=>{
+    setSho(true);
+    const adTimeout = setTimeout(()=>{
+      setSho(false);
+    },1000);
     const adInterval = setInterval(()=>{
-      setSho(true)
-    })
-    // const hasvisited = localStorage.getItem('hasVisite')
-    // if(!hasvisited){
-    //   setSho(false)
-    //   localStorage.setItem('hasvisited',true)
-    // }
-    const time = setTimeout(()=>{
-      setSho(false)
-    },7000);
-    return ()=> clearTimeout((time)=>{
- 
-    },2000)
-    
-   return ()=> clearInterval(adInterval)
+      setSho(true);
+      setTimeout(()=>{
+        setSho(false);
+      },1000)
+    },20000)
+    return ()=>{
+      clearTimeout(adTimeout);
+      clearInterval(adInterval)
+    }
   },[])
 
   return (
+    
     
     <div className="">
     {show ? (
