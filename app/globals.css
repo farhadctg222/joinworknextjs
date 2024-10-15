@@ -86,3 +86,18 @@
     @apply bg-background text-foreground;
   }
 }
+.top-banner.wi{
+  position: sticky;
+  top:0;
+ left:0;
+ width:100%;
+ background-color: #f1c40f;
+ color: white;
+ text-align: center;
+ padding: 10px;
+ font-size: 18px;
+ z-index: 1000;
+ box-shadow: 0 2x 5px rgba(0,0,0,0);
+
+
+}

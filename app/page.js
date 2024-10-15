@@ -1,6 +1,7 @@
 'use client'
 import React from 'react';
 import {useEffect,useState} from 'react';
+import './globals.css'
 
 import { Suspense } from 'react'
 import Carosel from "./componet/Carosel";
@@ -25,13 +26,13 @@ export default function Home() {
     setSho(true);
     const adTimeout = setTimeout(()=>{
       setSho(false);
-    },1000);
+    },5000);
     const adInterval = setInterval(()=>{
       setSho(true);
       setTimeout(()=>{
         setSho(false);
-      },1000)
-    },20000)
+      },10000)
+    },80000)
     return ()=>{
       clearTimeout(adTimeout);
       clearInterval(adInterval)
@@ -43,11 +44,13 @@ export default function Home() {
     
     <div className="">
     {show ? (
-      <Image src={ads} alt='ads Banner'></Image>
+      
+      <Image src={ads} className='top-banner' alt='ads Banner'></Image>
     ):
      
 
       (
+      <div className=''>
       <Suspense fallback={<h1>Loading..........</h1>}>
       
         <Carosel></Carosel>
@@ -68,6 +71,7 @@ export default function Home() {
 
 
          </Suspense>
+         </div>
         )}
          
 
