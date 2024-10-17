@@ -15,7 +15,7 @@ export const POST = async (request)=>{
     })
 }
 export const getDashbord = async ()=>{
-  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_API_URL}/api/data`)
+  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_API_URL}/api/data`,{cache:'no-store'})
 
   const das = await res.json()
   return das

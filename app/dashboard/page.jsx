@@ -1,16 +1,14 @@
 
 import React from 'react';
 import { getDashbord } from '../api/apply/route';
-import { cookies } from 'next/headers';
 
 
 
 
 
 
-const  dashboard =  async() => {
+const  page =  async() => {
   const data = await getDashbord()
-  console.log(cookies.getall())
    
 
     return (
@@ -52,4 +50,4 @@ const  dashboard =  async() => {
     );
 };
 
-export default dashboard;
+export default page;
