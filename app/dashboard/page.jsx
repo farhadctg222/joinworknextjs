@@ -1,5 +1,4 @@
-'use server'
-import { useSession } from 'next-auth/react';
+
 import React from 'react';
 import { getDashbord } from '../api/apply/route';
 import { cookies } from 'next/headers';
@@ -9,7 +8,7 @@ import { cookies } from 'next/headers';
 
 
 
-const  page =  async() => {
+const  dashboard =  async() => {
   const data = await getDashbord()
   console.log(cookies.getall())
    
@@ -53,4 +52,4 @@ const  page =  async() => {
     );
 };
 
-export default page;
+export default dashboard;
