@@ -1,10 +1,6 @@
 import React from 'react';
-import { getServerSession } from 'next-auth';
-import { oauth } from '../api/auth/[...nextauth]/route';
 
 const page = async () => {
-    const session = await getServerSession(oauth)
-    console.log({session})
     
     return (
         <div>
