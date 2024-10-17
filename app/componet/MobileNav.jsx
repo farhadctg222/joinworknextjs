@@ -15,6 +15,7 @@ const  MobileNav =  ()=> {
     signOut()
   }
   const router = useRouter()
+  console.log(router)
   const direct = ()=>{
     router.push('/api/auth/signin')
   } 
@@ -37,6 +38,11 @@ const  MobileNav =  ()=> {
         {
             name: 'contact',
             path:'/contact'
+        },
+       
+        {
+            name: 'dashboard',
+            path:'/dashboard'
         },
        
 
@@ -80,7 +86,6 @@ const  MobileNav =  ()=> {
 
               })
             }
-           {session.status ==="authenticated" && <Link className={`${links.path === pathname && "text-[#37ff02] border-b-2 border-accent"}  text-md text-sm text-[#37ff02] capitalize hover:text-accent transition-all `} href='/dashboard'>dashboard</Link>}
           </nav>
           {session.status === "authenticated" ? <Link className="text-center" href='' onClick={handle}><button className="btn-sm btn btn-success ">LogOut</button></Link> :  <Link className="text-center" onClick={direct} href="/api/auth/signin"><button className="btn-sm btn btn-success ">LogIn</button></Link>}
       

@@ -40,7 +40,7 @@ const Foter = () => {
                         <p>Email: joinwork222@gmail.com</p>
                     </div>
                     <div>
-                        <h2 className="text-lg font-semibold">Subscribe</h2>
+                        
                         <div className="flex">
                             <input
                                 type="email"
@@ -64,7 +64,7 @@ const Foter = () => {
               
             </div>
             <div className="text-center mt-4">
-                <p className="text-sm">© 2024 Your Company. All Rights Reserved.</p>
+                <p className="text-sm">© 2024 Join Work.org All Rights Reserved.</p>
             </div>
         </footer>
             

@@ -26,7 +26,7 @@ const page = () => {
       profilePicture
     }
     console.log(formData)
-    fetch(`${process.env.NEXT_PUBLIC_BASE_API_URL}api/apply`,{
+    fetch(`${process.env.NEXT_PUBLIC_BASE_API_URL}/api/apply`,{
     method: 'POST',
     headers: {
       "content-type": "application/json"
@@ -35,6 +35,7 @@ const page = () => {
    })
    .then(res=>res.json())
    .then(data=>{
+  
     console.log(data)
     Swal.fire({
       position: "top-end",
@@ -43,6 +44,7 @@ const page = () => {
       showConfirmButton: false,
       timer: 1500
     });
+    
    })
   }
 
