@@ -1,21 +1,15 @@
-
+'use server'
+import { useSession } from 'next-auth/react';
 import React from 'react';
+import { getDashbord } from '../api/apply/route';
 
 
 
-
-export const getDashbord = async ()=>{
-  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_API_URL}/api/data`)
-
-  const das = await res.json()
-  return das
-}
 
 
 
 const  page =  async() => {
   const data = await getDashbord()
-console.log(data)
    
 
     return (
