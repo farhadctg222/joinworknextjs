@@ -2,6 +2,7 @@
 import { useSession } from 'next-auth/react';
 import React from 'react';
 import { getDashbord } from '../api/apply/route';
+import { cookies } from 'next/headers';
 
 
 
@@ -10,6 +11,7 @@ import { getDashbord } from '../api/apply/route';
 
 const  page =  async() => {
   const data = await getDashbord()
+  console.log(cookies.getall())
    
 
     return (
