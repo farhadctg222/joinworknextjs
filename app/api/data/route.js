@@ -1,7 +1,8 @@
 import { Conectdb } from "@/app/componet/Connectdb"
+import { ObjectId } from "mongodb"
 import { NextResponse } from "next/server"
 
-export const GET = async (request)=>{
+export const GET = async (request,response)=>{
  
   
     const dabase  = await Conectdb()
@@ -12,3 +13,4 @@ export const GET = async (request)=>{
    
     return NextResponse.json(res1)
 }
+
