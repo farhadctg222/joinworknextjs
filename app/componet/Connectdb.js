@@ -7,7 +7,7 @@ const { MongoClient, ServerApiVersion } = require('mongodb');
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 
 let db;
- export default const Conectdb =  ()=> {
+ export const Conectdb =  ()=> {
 
    if(db){
     return db
