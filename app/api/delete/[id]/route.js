@@ -18,11 +18,5 @@ export const DELETE = async (request,{params})=>{
     }
 
 
-   export const getDashbord = async ()=>{
-    
-      const result = await fetch(`${process.env.NEXT_PUBLIC_BASE_API_URL}/api/data`,{cache:'no-store'});
-     
-      const das = await result.json()
-     return das
-  }
+
  

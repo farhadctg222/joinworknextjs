@@ -1,9 +1,21 @@
 import React from 'react';
 import Dashbord from '../componet/Dashbord';
-import { getDashbord } from '../api/delete/[id]/route';
 
 
-
+ const getDashbord = async ()=>{
+    
+    const result = await fetch(`${process.env.NEXT_PUBLIC_BASE_API_URL}/api/data`,
+       {
+          next:{
+             revalidate: 10
+          }
+       }
+    );
+   
+    const res = await result.json()
+    return res
+  
+}
 
 
 

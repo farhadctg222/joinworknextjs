@@ -2,10 +2,11 @@
 import React, { useState } from 'react';
 
 const Dashbord = ({users}) => {
-    const [user, setuser] = useState([users])
+    const [user, setuser] = useState(users)
+    const [data,setdata]= useState(user)
+    console.log(data)
   
   
-    console.log(user)
 
 
     
@@ -20,8 +21,8 @@ const Dashbord = ({users}) => {
                 .then(res => res.json())
                 .then(data => {
                    const remain  = user.filter(userName => userName._id !==id)
-                   console.log(remain)
-                   setuser(remain)
+                   setdata(remain)
+                   
                   
                   
                 })
@@ -44,8 +45,10 @@ const Dashbord = ({users}) => {
                          </tr>
                      </thead>
                      <tbody className="bg-white divide-y divide-gray-200">
-                         {users.map(user => (
+                         {data.map((user,index)=> (
                              <tr key={user._id}>
+
+                                 <td scop='row' className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">{index+1}</td>
                                  <td scop='row' className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">{user.name}</td>
                                  <td scop='row' className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">{user.email}</td>
                                  <td scop='row' className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">{user.mobile}</td>
@@ -53,8 +56,8 @@ const Dashbord = ({users}) => {
                                  <td scop='row' className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">{user.isDonar}</td>
                                  <td scop='row' className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">{user.isVolunteer}</td>
                                  <td scop='row' className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
-                                     <button onClick={()=>handleDelete(user._id)} className="text-indigo-600 hover:text-indigo-900">Edit</button>
-                                     <button className="text-indigo-600 hover:text-indigo-900">Delete</button>
+                                     <button  className="text-white btn btn-success p-2 hover:text-indigo-900">Edit</button>
+                                     <button onClick={()=>handleDelete(user._id)} className=" text-red-900 btn btn-success p-2  hover:text-indigo-900">Delete</button>
                                  
                                  </td>
                              </tr>
