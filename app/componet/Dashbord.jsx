@@ -3,8 +3,7 @@ import React, { useState } from 'react';
 
 const Dashbord = ({users}) => {
     const [user, setuser] = useState(users)
-    const [data,setdata]= useState(user)
-    console.log(data)
+    console.log(users)
   
   
 
@@ -20,8 +19,9 @@ const Dashbord = ({users}) => {
             })
                 .then(res => res.json())
                 .then(data => {
-                   const remain  = user.filter(userName => userName._id !==id)
-                   setdata(remain)
+                    const remain = user.filter(user=> user._id !==id)
+                    setuser(remain)
+                    console.log(remain)
                    
                   
                   
@@ -45,7 +45,7 @@ const Dashbord = ({users}) => {
                          </tr>
                      </thead>
                      <tbody className="bg-white divide-y divide-gray-200">
-                         {data.map((user,index)=> (
+                         {user.map((user,index)=> (
                              <tr key={user._id}>
 
                                  <td scop='row' className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">{index+1}</td>
