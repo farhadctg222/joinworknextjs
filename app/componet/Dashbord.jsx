@@ -10,7 +10,9 @@ const Dashbord = () => {
        const fetchdata = async()=>{
            try{
                const response = await  fetch(`${process.env.NEXT_PUBLIC_BASE_API_URL}/api/data`,{
-                   cache: 'no-store'
+                   next:{
+                    revalidate: 10
+                   }
                })
                const result = await response.json()
                setuser(result)
