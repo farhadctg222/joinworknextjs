@@ -9,6 +9,13 @@ import {useState, useEffect} from 'react';
 
 const  page =  async() => {
     const [user,setuser] = useState([])
+    const getDashbord = async ()=>{
+        const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_API_URL}/api/data`)
+       
+        const das = await res.json()
+        console.log(das)
+        setuser(das)
+    }
     const handleDelete = async (id)=>{
       const confime = confirm('Are You Delete')
       if(confime){
@@ -24,16 +31,8 @@ const  page =  async() => {
           })
 
       }
-            
-           
-         
-       }
-    const getDashbord = async ()=>{
-        const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_API_URL}/api/data`)
-       
-        const das = await res.json()
-        console.log(das)
-        setuser(das)
+      
+      
     }
     useEffect(()=>{
         getDashbord()
