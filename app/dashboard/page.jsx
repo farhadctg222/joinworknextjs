@@ -10,13 +10,22 @@ import {useState, useEffect} from 'react';
 const  page =  async() => {
     const [user,setuser] = useState([])
     const handleDelete = async (id)=>{
-      
-            
-            const delte = await  fetch(`${process.env.NEXT_PUBLIC_BASE_API_URL}/${id}`,{
+      const confime = confirm('Are You Delete')
+      if(confime){
+
+        const delte = await  fetch(`${process.env.NEXT_PUBLIC_BASE_API_URL}/api/delete/${id}`,{
                 
-                method: 'DELETE',
-              })
-              
+            method: 'DELETE',
+          })
+          .then(res=>res.json())
+          .then(data=>{
+            const remain  = user.filter(user=> user._id !==id)
+            setuser(remain)
+          })
+
+      }
+            
+           
          
        }
     const getDashbord = async ()=>{
@@ -28,7 +37,7 @@ const  page =  async() => {
     }
     useEffect(()=>{
         getDashbord()
-    },[])
+    },[setuser])
   
 
   
@@ -59,8 +68,8 @@ const  page =  async() => {
                           <td scop='row' className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">{user.isDonar}</td>
                           <td scop='row' className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">{user.isVolunteer}</td>
                           <td scop='row' className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
-                              <button onClick={()=>handleDelete(user._id)}  className="text-indigo-600 hover:text-indigo-900">Edit</button>
-                              <button className="text-red-600 hover:text-red-900 ml-2">Delete</button>
+                              <button   className="text-indigo-600 hover:text-indigo-900">Edit</button>
+                              <button onClick={()=>handleDelete(user._id)} className="text-red-600 hover:text-red-900 ml-2">Delete</button>
                           </td>
                       </tr>
                   ))}

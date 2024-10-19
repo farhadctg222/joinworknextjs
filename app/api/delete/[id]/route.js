@@ -1,3 +1,4 @@
+import { Conectdb } from "@/app/componet/Connectdb"
 import { ObjectId } from "mongodb"
 
 export const DELETE = async (request,{params})=>{
@@ -5,14 +6,14 @@ export const DELETE = async (request,{params})=>{
     const db = await Conectdb()
     const collection = await db.collection('data')
      try{
-        const result  = await collection.deleteOne({_id: new ObjectId(params.id)})
-        if(result.delteteCount===1){
-         Response.status(200).json({message:'delete one ',result})
-        }
+        const delet =  await collection.deleteOne({_id: new ObjectId(params.id)})
+         return Response.json({message:'delete the user',delet})
         
      }
-     catch{
-       console.log(error)
+     catch(error){
+      return Response.json({message:'something rong'})
      }
+
+     
     }
  

@@ -15,7 +15,6 @@ const  MobileNav =  ()=> {
     signOut()
   }
   const router = useRouter()
-  console.log(router)
   const direct = ()=>{
     router.push('/api/auth/signin')
   } 

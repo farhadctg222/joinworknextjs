@@ -44,6 +44,7 @@ const page = () => {
       showConfirmButton: false,
       timer: 1500
     });
+   formData.value.reset()
     
    })
   }
