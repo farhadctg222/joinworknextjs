@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 import { FaYoutube,FaFacebook,FaTwitter} from 'react-icons/fa6';
+import UpdateNotification from './UpdateNotification';
 
 const Foter = () => {
     return (
@@ -9,10 +10,10 @@ const Foter = () => {
      <footer className="footer p-10 bg-[#fde047] font-bold  text-black">
   <nav>
     <h6 className="footer-title">Services</h6> 
-    <Link  href="/dashboard" className="link underline link-hover">Educational Services</Link>
-    <Link href="/dashboard" className="link underline link-hover">Women and Child Protection</Link>
-    <Link href="/dashboard" className="link underline link-hover">Volunteer and Community Engagement</Link>
-    <Link href="/dashboard" className="link underline link-hover">Advertisement</Link>
+    <Link  href="/*" className="link underline link-hover">Educational Services</Link>
+    <Link href="/*" className="link underline link-hover">Women and Child Protection</Link>
+    <Link href="/*" className="link underline link-hover">Volunteer and Community Engagement</Link>
+    <Link href="/*" className="link underline link-hover">Advertisement</Link>
   </nav> 
   <nav>
     <h6 className="footer-title">Company</h6> 
@@ -23,8 +24,7 @@ const Foter = () => {
   </nav> 
   <nav>
     <h6 className="footer-title">Legal</h6> 
-    <Link href="/dashboard" className="link underline link-hover">Privacy policy </Link>
-    <Link href="/dashboard" className="link underline link-hover">Cookie policy </Link>
+    <Link href="/privacy" className="link underline link-hover">Privacy policy </Link>
     <Link href="/Inword" className="bg-blue-500 text-white font-semibold py-2 px-4 rounded-md transition-all duration-300 transform hover:scale-105 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-opacity-50 animate-bounce">In Word </Link>
   </nav>
 </footer> 
@@ -62,6 +62,7 @@ const Foter = () => {
                
                
               
+            <UpdateNotification></UpdateNotification>
             </div>
             <div className="text-center mt-4">
                 <p className="text-sm">© 2024 Join Work.org All Rights Reserved.</p>
