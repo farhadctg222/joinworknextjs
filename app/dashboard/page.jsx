@@ -6,7 +6,7 @@ import Dashbord from '../componet/Dashbord';
     
     const result = await fetch(`${process.env.NEXT_PUBLIC_BASE_API_URL}/api/data`,
        {
-          cache:'force-cache'|| 'no-store'
+          cache:'no-store'
        }
     );
    
