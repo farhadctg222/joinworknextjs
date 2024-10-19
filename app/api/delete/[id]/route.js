@@ -1,5 +1,6 @@
 import { Conectdb } from "@/app/componet/Connectdb"
 import { ObjectId } from "mongodb"
+import { unstable_noStore } from "next/cache"
 
 export const DELETE = async (request,{params})=>{
    
@@ -19,9 +20,8 @@ export const DELETE = async (request,{params})=>{
 
 
    export const getDashbord = async ()=>{
-      const result = await fetch(`${process.env.NEXT_PUBLIC_BASE_API_URL}/api/data`,{
-        cache: 'no-store'
-      });
+    unstable_noStore()
+      const result = await fetch(`${process.env.NEXT_PUBLIC_BASE_API_URL}/api/data`);
      
       const das = await result.json()
      return das
