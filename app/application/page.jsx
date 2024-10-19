@@ -35,6 +35,7 @@ const page = () => {
    })
    .then(res=>res.json())
    .then(data=>{
+    
   
     console.log(data)
     Swal.fire({
@@ -44,7 +45,7 @@ const page = () => {
       showConfirmButton: false,
       timer: 1500
     });
-   
+  
     
    })
   }
