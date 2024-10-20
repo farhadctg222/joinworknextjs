@@ -1,7 +1,6 @@
 import { Conectdb } from "@/app/componet/Connectdb"
-import { ObjectId } from "mongodb"
 import { NextResponse } from "next/server"
-
+export const dynamic = 'force-dynamic'
 export const GET = async (request,response)=>{
  
   
