@@ -1,5 +1,6 @@
 import { Conectdb } from "@/app/componet/Connectdb"
 import { ObjectId } from "mongodb"
+import { NextResponse } from "next/server"
 
 export const DELETE = async (request,{params})=>{
    
@@ -7,11 +8,11 @@ export const DELETE = async (request,{params})=>{
     const collection = await db.collection('data')
      try{
         const delet =  await collection.deleteOne({_id: new ObjectId(params.id)})
-         return Response.json({message:'delete the user',delet})
+         return NextResponse.json({message:'delete the user',delet})
         
      }
      catch(error){
-      return Response.json({message:'something rong'})
+      return NextResponse.json({message:'something rong'})
      }
 
      
