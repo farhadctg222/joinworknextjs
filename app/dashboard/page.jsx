@@ -17,7 +17,7 @@ import { getAllData } from '../componet/getAllData';
 
 
 
-const page =  async() => {
+const getServerSideProps =  async() => {
     const user = await getAllData()
     console.log(user)
     
@@ -71,7 +71,7 @@ const page =  async() => {
     );
 };
 
-export default page;
+export default getServerSideProps;
 
 
 {/* <div className="container  overflow-x-auto mx-auto p-6 bg-gray-100">
