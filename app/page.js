@@ -1,10 +1,8 @@
-'use client'
+export const dynamic = 'force-dynamic'
 import React from 'react';
-import {useEffect,useState} from 'react';
 import './globals.css'
 
 import { Suspense } from 'react'
-import Carosel from "./componet/Carosel";
 import Charity from "./componet/Charity";
 import JoinProgram from "./componet/JoinProgram";
 import Particularly from "./componet/Particularly";
@@ -15,45 +13,44 @@ import Committee from "./componet/Committee";
 import Review from './componet/Review';
 import Sponser from './componet/Sponser';
 import Blog from './blog/page';
-import Image from 'next/image';
-import ads from '/public/adsBanner.jpg'
+import Carosel from './componet/Carosel';
 
 
 
 export default function Home() {
-  const [show,setSho] = useState(false)
-  useEffect(()=>{
-    setSho(true);
-    const adTimeout = setTimeout(()=>{
-      setSho(false);
-    },5000);
-    const adInterval = setInterval(()=>{
-      setSho(true);
-      setTimeout(()=>{
-        setSho(false);
-      },10000)
-    },80000)
-    return ()=>{
-      clearTimeout(adTimeout);
-      clearInterval(adInterval)
-    }
-  },[])
+  // const [show,setSho] = useState(false)
+  // useEffect(()=>{
+  //   setSho(true);
+  //   const adTimeout = setTimeout(()=>{
+  //     setSho(false);
+  //   },5000);
+  //   const adInterval = setInterval(()=>{
+  //     setSho(true);
+  //     setTimeout(()=>{
+  //       setSho(false);
+  //     },10000)
+  //   },80000)
+  //   return ()=>{
+  //     clearTimeout(adTimeout);
+  //     clearInterval(adInterval)
+  //   }
+  // },[])
 
   return (
     
     
     <div className="">
-    {show ? (
+    {/* {show ? (
       
       <Image src={ads} className='top-banner' alt='ads Banner'></Image>
     ):
-     
+      */}
 
-      (
+      
       <div className=''>
       <Suspense fallback={<h1>Loading..........</h1>}>
       
-        <Carosel></Carosel>
+       <Carosel></Carosel>
         <JoinProgram></JoinProgram>
         <Particularly></Particularly>
         <Donation></Donation>
@@ -72,7 +69,7 @@ export default function Home() {
 
          </Suspense>
          </div>
-        )}
+        
          
 
 

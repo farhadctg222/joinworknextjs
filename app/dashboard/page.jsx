@@ -26,7 +26,15 @@ const users  =  await getDashbord()
 
 
     return (
+        <div>
+
+
         <Dashbord users={users}></Dashbord>
+        :
+
+
+
+        </div>
 
      
 
