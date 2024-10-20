@@ -1,4 +1,4 @@
-
+export const dynamic = 'auto'
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Foter from "./componet/Foter";
