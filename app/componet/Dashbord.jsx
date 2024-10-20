@@ -2,23 +2,22 @@
 import React, { useEffect, useState } from 'react';
 
 const Dashbord = () => {
-    const [user, setuser] = useState([])
+    const [user, setUser] = useState([])
     console.log(user)
 
-   
 
     useEffect(()=>{
-        const data = fetch(`${process.env.NEXT_PUBLIC_BASE_API_URL}/api/data`,{
-            cache: 'no-store'
-        })
-       .then(result=> result.json())
-       .then(data=>{
-        console.log(data)
-        setuser(data)
-       })
-    },[])  
+        const fetData = async()=>{
+            const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_API_URL}/api/data`,{
+             cache: 'no-store'
+            })
+            const newData = await response.json()
+            setUser(newData)
+        }
+        fetData()
+    },[])
    
-  
+
 
 
     
@@ -33,7 +32,7 @@ const Dashbord = () => {
                 .then(res => res.json())
                 .then(data => {
                     const remain = user.filter(user=> user._id !==id)
-                    setuser(remain)
+                    setUser(remain)
                     console.log(remain)
                    
                   

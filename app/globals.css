@@ -98,8 +98,9 @@
 
 .scrolling-text {
   display: inline-block;
- 
+  white-space: nowrap;
   animation: scroll 30s linear infinite;
+  animation-timing-function: linear;
 }
 
 
