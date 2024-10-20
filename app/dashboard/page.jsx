@@ -15,7 +15,7 @@ import { getAllData } from '../componet/getAllData';
   
 // }
 
-
+export const dynamic = 'force-dynamic'
 
 const getServerSideProps =  async() => {
     const user = await getAllData()
