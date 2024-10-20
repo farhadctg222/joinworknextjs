@@ -2,25 +2,24 @@ import React from 'react';
 import Dashbord from '../componet/Dashbord';
 
 
- const getDashbord = async ()=>{
+//  const getDashbord = async ()=>{
     
-    const result = await fetch(`${process.env.NEXT_PUBLIC_BASE_API_URL}/api/data`,
-       {
-          cache:'no-store'
-       }
-    );
+//     const result = await fetch(`${process.env.NEXT_PUBLIC_BASE_API_URL}/api/data`,
+//        {
+//           cache:'no-store'
+//        }
+//     );
    
-    const res = await result.json()
-    return res
+//     const res = await result.json()
+//     return res
   
-}
+// }
 
 
 
 const page = async () => {
     
         
-const users  =  await getDashbord()
   
 
 
@@ -29,7 +28,7 @@ const users  =  await getDashbord()
         <div>
 
 
-        <Dashbord users={users}></Dashbord>
+        <Dashbord></Dashbord>
         :
 
 

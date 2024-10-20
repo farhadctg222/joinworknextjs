@@ -1,10 +1,23 @@
 'use client'
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
-const Dashbord = ({users}) => {
-    const [user, setuser] = useState(users)
-    console.log(users)
-  
+const Dashbord = () => {
+    const [user, setuser] = useState([])
+    console.log(user)
+
+   
+
+    useEffect(()=>{
+        const data = fetch(`${process.env.NEXT_PUBLIC_BASE_API_URL}/api/data`,{
+            cache: 'no-store'
+        })
+       .then(result=> result.json())
+       .then(data=>{
+        console.log(data)
+        setuser(data)
+       })
+    },[])  
+   
   
 
 
