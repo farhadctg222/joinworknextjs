@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 import Sidebars from './Sidebars';
 import Link from 'next/link';
 
-const Dashbord = ({onClose}) => {
+const Dashbord = () => {
     const session = useSession()
     const [user, setUser] = useState([])
     console.log(session)

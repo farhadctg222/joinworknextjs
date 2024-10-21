@@ -12,9 +12,8 @@ import NewSection from './componet/NewSection';
 import Committee from "./componet/Committee";
 import Review from './componet/Review';
 import Sponser from './componet/Sponser';
-import Blog from './blog/page';
 import Carosel from './componet/Carosel';
-import Post from './componet/Post';
+import BlogPost from './api/post/page';
 
 
 
@@ -64,7 +63,7 @@ export default function Home() {
          <Review></Review>
 
 
-         <Post></Post>
+       <BlogPost></BlogPost>
 
 
 
