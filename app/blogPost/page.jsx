@@ -39,7 +39,7 @@ const BlogPost = async() => {
                   return (
                     <span>
                       {firstPart}..... <br />
-                      <Link className='text-red-600' href={post._id}>
+                      <Link className='text-red-600' href={`/blogPost/${post._id}`}>
                       Read More
                       </Link>
                     </span>

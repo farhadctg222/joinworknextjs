@@ -1,5 +1,6 @@
 'use client'
 import React, { useState } from 'react';
+import Swal from 'sweetalert2';
 
 export default function BlogPostForm() {
   const [title, setTitle] = useState('');
@@ -36,7 +37,19 @@ export default function BlogPostForm() {
         body: JSON.stringify(formData)
     })
     .then(respon=> respon.json())
-    .then(data=> console.log(data))
+    .then(data=> {
+      Swal.fire({
+        position: "top-end",
+        icon: "success",
+        title:  'Successfully Done',
+        showConfirmButton: false,
+        timer: 1500
+      });
+      setTitle('')
+      setContent('')
+      setImage(null)
+      setImagePreview(null)
+    })
     
   }
 
