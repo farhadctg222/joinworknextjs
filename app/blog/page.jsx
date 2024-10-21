@@ -1,69 +1,96 @@
-import React from 'react';
-import donation from '/public/donation.jpg'
-import Image from 'next/image';
+'use client'
+import React, { useState } from 'react';
 
-const Blog = () => {
-    return (
-        <aside aria-label="Related articles" class="py-8 m-auto lg:py-24 bg-gray-50 flex items-center dark:bg-gray-800">
-  <div class="px-4 mx-auto max-w-screen-xl">
-      <h2 class="mb-8 text-2xl font-bold text-gray-900 dark:text-white">Recently articles</h2>
-      <div class="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
-          <article class="max-w-xs">
-              <a href="#">
-                <Image width={200} height={200} alt='donation' src={donation}></Image>
-              </a>
-              <h2 class="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white">
-                  <a href="#">Our first office</a>
-              </h2>
-              <p class="mb-4 text-gray-500 dark:text-gray-400">Over the past year, Volosoft has undergone many changes! After months of preparation.</p>
-              <a href="#" class="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline">
-                  Read in 2 minutes
-              </a>
-          </article>
-          <article class="max-w-xs">
-              <a href="#">
-              <Image width={200} height={200} alt='donation' src={donation}></Image>
+export default function BlogPostForm() {
+  const [title, setTitle] = useState('');
+  const [content, setContent] = useState('');
+  const [image, setImage] = useState(null);
+  const [imagePreview, setImagePreview] = useState(null);
+  const createdAt = useState(new Date().toISOString().slice(0,10))
 
-              </a>
-              <h2 class="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white">
-                  <a href="#">Enterprise design tips</a>
-              </h2>
-              <p class="mb-4  text-gray-500 dark:text-gray-400">Over the past year, Volosoft has undergone many changes! After months of preparation.</p>
-              <a href="#" class="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline">
-                  Read in 12 minutes
-              </a>
-          </article>
-          <article class="max-w-xs">
-              <a href="#">
-              <Image width={200} height={200} alt='donation' src={donation}></Image>
+  const handleImageChange = (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      setImage(file);
+      setImagePreview(URL.createObjectURL(file));
+    }
+  };
+  const handleSubmit = async(e)=>{
+     e.preventDefault()
+    const formData = {
+        title,
+        content,
+        image,
+        createdAt
+    }
+    console.log(formData)
 
-              </a>
-              <h2 class="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white">
-                  <a href="#">We partnered with Google</a>
-              </h2>
-              <p class="mb-4  text-gray-500 dark:text-gray-400">Over the past year, Volosoft has undergone many changes! After months of preparation.</p>
-              <a href="#" class="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline">
-                  Read in 8 minutes
-              </a>
-          </article>
-          <article class="max-w-xs">
-              <a href="#">
-              <Image width={200} height={200} alt='donation' src={donation}></Image>
+    const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_API_URL}/api/post`,{
+        next: {
+            revalidate: 10
+        },
+        method : 'POST',
+        headers: {
+            'content-type':'application/json'
+        },
+        body: JSON.stringify(formData)
+    })
+    .then(respon=> respon.json())
+    .then(data=> console.log(data))
+    
+  }
 
-              </a>
-              <h2 class="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white">
-                  <a href="#">Our first project with React</a>
-              </h2>
-              <p class="mb-4  text-gray-500 dark:text-gray-400">Over the past year, Volosoft has undergone many changes! After months of preparation.</p>
-              <a href="#" class="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline">
-                  Read in 4 minutes
-              </a>
-          </article>
-      </div>
-  </div>
   
-</aside>
-    );
-};
-
-export default Blog;
+  return (
+    <div className="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-md">
+      <h2 className="text-2xl font-bold mb-6 text-gray-700">Create a Blog Post</h2>
+      <form onSubmit={handleSubmit}>
+        <div className="mb-4">
+          <label className="block text-gray-600 mb-2">Title:</label>
+          <input
+            type="text"
+            value={title}
+            onChange={(e) => setTitle(e.target.value)}
+            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            required
+          />
+        </div>
+        <div className="mb-4">
+          <label className="block text-gray-600 mb-2">Content:</label>
+          <textarea
+            value={content}
+            onChange={(e) => setContent(e.target.value)}
+            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            rows="5"
+            required
+          />
+        </div>
+        <div className="mb-4">
+          <label className="block text-gray-600 mb-2">Image:</label>
+          <input
+            type="file"
+            accept="image/*"
+            onChange={handleImageChange}
+            className="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-600 hover:file:bg-blue-100"
+          />
+        </div>
+        {imagePreview && (
+          <div className="mb-4">
+            <h4 className="text-gray-600 mb-2">Image Preview:</h4>
+            <img
+              src={imagePreview}
+              alt="Preview"
+              className="w-full h-auto max-w-xs rounded-lg shadow-md"
+            />
+          </div>
+        )}
+        <button
+          type="submit"
+          className="w-full bg-blue-500 text-white font-bold py-2 px-4 rounded-md hover:bg-blue-600 transition-colors"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+  );
+}

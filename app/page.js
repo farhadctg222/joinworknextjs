@@ -14,6 +14,7 @@ import Review from './componet/Review';
 import Sponser from './componet/Sponser';
 import Blog from './blog/page';
 import Carosel from './componet/Carosel';
+import Post from './componet/Post';
 
 
 
@@ -63,7 +64,7 @@ export default function Home() {
          <Review></Review>
 
 
-         <Blog></Blog>
+         <Post></Post>
 
 
 

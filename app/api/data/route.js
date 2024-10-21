@@ -13,3 +13,4 @@ export const GET = async (request,response)=>{
     return NextResponse.json(res1)
 }
 
+
