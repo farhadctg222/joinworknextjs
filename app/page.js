@@ -13,7 +13,7 @@ import Committee from "./componet/Committee";
 import Review from './componet/Review';
 import Sponser from './componet/Sponser';
 import Carosel from './componet/Carosel';
-import BlogPost from './api/post/page';
+import BlogPost from './blogPost/page';
 
 
 
