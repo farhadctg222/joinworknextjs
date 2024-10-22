@@ -17,13 +17,8 @@ const BlogPost = async() => {
     //     }
 
     // }
-    if(!posts.ok){
-      return <h1>error plese refetch</h1>
-    }
-    if(Error){
-      return <h1>loading.......</h1>
-    }
-    
+   
+  
        
     return (
         <div className=" mx-auto p-4 ">
@@ -56,7 +51,7 @@ const BlogPost = async() => {
                   return post.content;
                 }
               })()}
-
+s
 
 
 

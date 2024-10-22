@@ -8,5 +8,9 @@ export const  postData = async()=>{
     const result = await fetch(`${process.env.NEXT_PUBLIC_BASE_API_URL}/api/post`,{next:{
         revalidate:10
     }})
+    if(!result.ok){
+        return new Error("newtwork not response");
+        
+    }
     return result.json()
 }
