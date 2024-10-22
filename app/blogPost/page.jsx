@@ -8,16 +8,23 @@ const posts = await postData()
 
 
 const BlogPost = async() => {
-    const formatTextWithReaMore = (text,wordLimit)=>{
-        const words = text.split(' ')
-        if(words.length>wordLimit){
-            const firsPart = words.slice(0,wordLimit).join(' ')
-            const remaininPart = words.slice(wordLimit).join(' ')
-        }
+    // const formatTextWithReaMore = (text,wordLimit)=>{
+    //     const words = text.split(' ')
+    //     console.log(words)
+    //     if(words.length>wordLimit){
+    //         const firsPart = words.slice(0,wordLimit).join(' ')
+    //         const remaininPart = words.slice(wordLimit).join(' ')
+    //     }
 
+    // }
+    if(!posts.ok){
+      return <h1>error plese refetch</h1>
+    }
+    if(Error){
+      return <h1>loading.......</h1>
     }
     
-
+       
     return (
         <div className=" mx-auto p-4 ">
       <h1 className="text-3xl font-bold mb-6 text-center"> <article>Recently Article</article>  </h1>
@@ -31,7 +38,8 @@ const BlogPost = async() => {
 
 
             {(() => {
-                const words = post.content.split(' ');
+                const words = post.content.split(' ')
+              
                 if (words.length > 60) {
                   const firstPart = words.slice(0, 30).join(' ');
                   const remainingPart = words.slice(30).join(' ');

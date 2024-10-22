@@ -1,7 +1,8 @@
 'use client'
 import React, { useState } from 'react';
+import ReactQuill from 'react-quill';
 import Swal from 'sweetalert2';
-
+import 'react-quill/dist/quill.snow.css'
 export default function BlogPostForm() {
   const [title, setTitle] = useState('');
   const [content, setContent] = useState('');
@@ -16,15 +17,24 @@ export default function BlogPostForm() {
       setImagePreview(URL.createObjectURL(file));
     }
   };
+  const handleContent = (e)=>{
+    setContent(e)
+  }
   const handleSubmit = async(e)=>{
      e.preventDefault()
-    const formData = {
-        title,
-        content,
-        image,
-        createdAt
+    // const formData = {
+    //     title,
+    //     content,
+    //     image,
+    //     createdAt
+    // }
+    // console.log(formData)
+    const formData = new FormData()
+    formData.append('title',title)
+    formData.append('content',content)
+    if(image){
+ formData.append('image',image)
     }
-    console.log(formData)
 
     const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_API_URL}/api/post`,{
         next: {
@@ -34,10 +44,11 @@ export default function BlogPostForm() {
         headers: {
             'content-type':'application/json'
         },
-        body: JSON.stringify(formData)
+        body: JSON.stringify(formData,createdAt)
     })
     .then(respon=> respon.json())
     .then(data=> {
+      console.log(data)
       Swal.fire({
         position: "top-end",
         icon: "success",
@@ -70,10 +81,11 @@ export default function BlogPostForm() {
         </div>
         <div className="mb-4">
           <label className="block text-gray-600 mb-2">Content:</label>
-          <textarea
+          <ReactQuill
             value={content}
-            onChange={(e) => setContent(e.target.value)}
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            onChange={handleContent}
+            theme='snow'
+            className="mb-6"
             rows="5"
             required
           />

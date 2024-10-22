@@ -63,9 +63,12 @@ export default function Home() {
          <Review></Review>
 
 
-       <BlogPost></BlogPost>
+      
 
 
+         </Suspense>
+         <Suspense fallback={<h1>loading..........</h1>}>
+         <BlogPost></BlogPost>
 
          </Suspense>
          </div>
