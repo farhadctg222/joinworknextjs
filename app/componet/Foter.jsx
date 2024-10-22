@@ -23,7 +23,9 @@ const Foter = () => {
     <Link href="/promise" className="link underline link-hover">আমাদের শপথ</Link>
   </nav> 
   <nav>
-    <h6 className="footer-title">Legal</h6> 
+    <h6 className="footer-title">Legal</h6>
+    
+    <Link href="/AdsRentSectio " className="link underline link-hover">Advirtise With Us</Link>
     <Link href="/privacy" className="link underline link-hover">Privacy policy </Link>
     <Link href="/Inword" className="bg-blue-500 text-white font-semibold py-2 px-4 rounded-md transition-all duration-300 transform hover:scale-105 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-opacity-50 animate-bounce">In Word </Link>
   </nav>
@@ -62,9 +64,9 @@ const Foter = () => {
                
                
               
-            <UpdateNotification></UpdateNotification>
             </div>
             <div className="text-center mt-4">
+            <UpdateNotification></UpdateNotification>
                 <p className="text-sm">© 2024 Join Work.org All Rights Reserved.</p>
             </div>
         </footer>
