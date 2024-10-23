@@ -22,30 +22,31 @@ export default function BlogPostForm() {
   }
   const handleSubmit = async(e)=>{
      e.preventDefault()
-    // const formData = {
-    //     title,
-    //     content,
-    //     image,
-    //     createdAt
-    // }
-    // console.log(formData)
-    const formData = new FormData()
-    formData.append('title',title)
-    formData.append('content',content)
-    if(image){
- formData.append('image',image)
+    const formData = {
+        title,
+        content,
+        image,
+        createdAt
     }
+    // console.log(formData)
+//     const formData = new FormData()
+//     formData.append('title',title)
+//     formData.append('content',content)
+//     if(image){
+//  formData.append('image',image)
+//     }
 
     const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_API_URL}/api/post`,{
-        next: {
-            revalidate: 10
-        },
+      next: {
+        revalidate
+      },
         method : 'POST',
         headers: {
             'content-type':'application/json'
         },
-        body: JSON.stringify(formData,createdAt)
+        body: JSON.stringify(formData)
     })
+    
     .then(respon=> respon.json())
     .then(data=> {
       console.log(data)

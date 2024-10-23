@@ -6,6 +6,7 @@ import { Suspense } from 'react';
 import Loading from './loading';
 import Header from "./componet/Header";
 import AuthProvider from "./componet/AuthProvider";
+import BlogPost from "./blogPost/page";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -32,6 +33,13 @@ export default function RootLayout({ children }) {
         
            </div>
         </Suspense>
+
+        <Suspense fallback={<h1>loading..........</h1>}>
+      
+           <BlogPost></BlogPost>
+       
+
+         </Suspense>
         
         <Foter></Foter>
        

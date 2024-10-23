@@ -13,7 +13,6 @@ import Committee from "./componet/Committee";
 import Review from './componet/Review';
 import Sponser from './componet/Sponser';
 import Carosel from './componet/Carosel';
-import BlogPost from './blogPost/page';
 
 
 
@@ -67,10 +66,7 @@ export default function Home() {
 
 
          </Suspense>
-         <Suspense fallback={<h1>loading..........</h1>}>
-         <BlogPost></BlogPost>
-
-         </Suspense>
+        
          </div>
         
          
