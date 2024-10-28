@@ -59,7 +59,7 @@ const Foter = () => {
             </div>
             <div className="flex justify-center space-x-4 mt-4">
             <Link href="https://www.youtube.com/@joinworkbd"><FaYoutube className="text-[#FF0000]  text-4xl " />   </Link>
-   <Link href="https://web.facebook.com/profile.php?id=61558599038223"><FaFacebook className="text-[#1877F2]    text-4xl"  /></Link> 
+   <Link href="https://www.facebook.com/share/hHvJcJJZPdfxK7p2"><FaFacebook className="text-[#1877F2]    text-4xl"  /></Link> 
     <FaTwitter className=" text-[#1DA1F2]  text-4xl"/>
                
                
