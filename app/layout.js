@@ -11,8 +11,23 @@ import BlogPost from "./blogPost/page";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Join Work",
-  description: "Join Work Together",
+  <title>JoinWork.org - ন্যায্যমূল্যে পুষ্টিকর খাবার</title>
+      <meta name="description" content="JoinWork.org ন্যায্যমূল্যে পুষ্টিকর খাবার সরবরাহ করে, যাতে সবাই সুস্বাদু ও স্বাস্থ্যকর খাবার পেতে পারে।" />
+      <meta name="keywords" content="ন্যায্যমূল্য খাবার, কম খরচে খাবার, পুষ্টিকর খাবার, JoinWork, সাশ্রয়ী মূল্যে খাবার" />
+      <meta name="author" content="JoinWork.org" />
+
+      {/* Open Graph (Facebook & Social Media) */}
+      <meta property="og:title" content="JoinWork.org - ন্যায্যমূল্যে পুষ্টিকর খাবার" />
+      <meta property="og:description" content="JoinWork.org সাশ্রয়ী মূল্যে পুষ্টিকর খাবার সরবরাহ করে, যা সকলের জন্য সহজলভ্য।" />
+      <meta property="og:image" content="https://www.joinwork.org/cover-image.jpg" />
+      <meta property="og:url" content="https://www.joinwork.org" />
+      <meta property="og:type" content="website" />
+
+      {/* Twitter Card */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="JoinWork.org - ন্যায্যমূল্যে পুষ্টিকর খাবার" />
+      <meta name="twitter:description" content="আমাদের লক্ষ্য সবার জন্য সাশ্রয়ী মূল্যে স্বাস্থ্যকর খাবার নিশ্চিত করা।" />
+      <meta name="twitter:image" content="
 };
 
 export default function RootLayout({ children }) {
@@ -27,6 +42,7 @@ export default function RootLayout({ children }) {
 
          <div className="sm:center md:center lg:center">
           
+
 
               {children}
              
