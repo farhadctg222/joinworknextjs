@@ -37,7 +37,9 @@ export default function RootLayout({ children }) {
       <body className='p-3'>
         <Header></Header>
 
-     
+     <h1>JoinWork.org - সাশ্রয়ী মূল্যে স্বাস্থ্যকর খাবার</h1>
+<p>আমাদের লক্ষ্য শ্রমজীবী ও সাধারণ মানুষের জন্য ন্যায্যমূল্যে পুষ্টিকর খাবার নিশ্চিত করা।</p>
+
         <Suspense fallback={<Loading></Loading>}>
 
          <div className="sm:center md:center lg:center">
