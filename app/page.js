@@ -22,11 +22,7 @@ export default function Home() {
     
     
     <div className="">
-     {show ? (
-      
-      <Image src={ads} className='top-banner' alt='ads Banner'></Image>
-    ):
-}
+     
 
       
       <div className=''>
