@@ -17,23 +17,6 @@ import Carosel from './componet/Carosel';
 
 
 export default function Home() {
- const [show,setSho] = useState(false)
-   useEffect(()=>{
-    setSho(true);
-   const adTimeout = setTimeout(()=>{
-       setSho(false);
-    },5000);
-  const adInterval = setInterval(()=>{
-      setSho(true);
-       setTimeout(()=>{
-        setSho(false);
-      },10000)
-    },80000)
-    return ()=>{
-      clearTimeout(adTimeout);
-      clearInterval(adInterval)
-   }
- },[])
 
   return (
     
