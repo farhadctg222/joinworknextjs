@@ -10,7 +10,7 @@ import BlogPost from "./blogPost/page";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
+export const metadata = {
   title: 'join work',
   description: 'join work together ',
 }
