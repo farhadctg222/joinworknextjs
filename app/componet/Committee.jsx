@@ -4,6 +4,11 @@ import pic2 from '/public/ador.jpg'
 import pic4 from '/public/minhaz.jpg'
 import Image from 'next/image';
 
+export const metadata= {
+  title: 'Mohammad Farhad Uddin ',
+  description: 'join work, students helper',
+}
+
 
 const Committee = () => {
     return (
