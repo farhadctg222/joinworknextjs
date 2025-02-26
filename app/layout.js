@@ -10,10 +10,10 @@ import BlogPost from "./blogPost/page";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = {
-
+export const metadata: Metadata = {
+  title: 'join work',
+  description: 'join work together ',
 }
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
