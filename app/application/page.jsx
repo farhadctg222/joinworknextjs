@@ -76,6 +76,21 @@ const page = () => {
               required
             />
           </div>
+      <Head>
+        <title>My Awesome Page | Best Services</title>
+        <meta name="description" content="This is an awesome page about the best services available." />
+        <meta name="keywords" content="best services, awesome website, seo nextjs" />
+        <meta name="author" content="Your Name" />
+        <meta property="og:title" content="My Awesome Page" />
+        <meta property="og:description" content="Discover the best services with us." />
+        <meta property="og:image" content="/images/og-image.jpg" />
+        <meta property="og:url" content="https://yourwebsite.com" />
+        <meta name="robots" content="index, follow" />
+      </Head>
+      <h1>Welcome to My SEO Optimized Page</h1>
+      </>
+
+          
 
           {/* Email Field */}
           <div className="mb-4">
