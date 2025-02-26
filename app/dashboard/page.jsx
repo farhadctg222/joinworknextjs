@@ -1,6 +1,6 @@
 'use client'
 
-
+import Dashbord from '../componet/Dashbord
 
 const get = async ()=>{
     
