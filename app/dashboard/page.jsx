@@ -6,10 +6,12 @@ const getServerSideProps = async ()=>{
 
 
   const result = await fetch(`${process.env.NEXT_PUBLIC_BASE_API_URL}/api/data`,
-                             }
+                             
+                            ) 
+}
 
 
-const getServerSideProps =  async() => {
+const gets =  async() => {
      const user = await getAllData()
      
     //console.log(user)
@@ -48,4 +50,4 @@ const getServerSideProps =  async() => {
     );
 };
 
-export default getServerSideProps;
+export default gets;
