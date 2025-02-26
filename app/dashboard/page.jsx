@@ -8,12 +8,11 @@ const get = async ()=>{
       {
           cache:'no-store'
       } 
-                            );
+               ) ;           
        const res = await result.json()
     return res
-  
+ 
 }
-
 export const dynamic = 'force-dynamic'
 
 const getServerSideProps =  async() => {
