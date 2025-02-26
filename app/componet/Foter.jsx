@@ -37,7 +37,7 @@ const Foter = () => {
                 <div className="flex flex-col md:flex-row justify-between items-center">
                     <div className="mb-4 md:mb-0">
                         <h2 className="text-lg font-semibold">Contact Us</h2>
-                        <p>Address: Sk Mujib Road, </p>
+                        <p>Address: Sk Mujib Road, Faruq Chamber, Agrabad, Chattogram </p>
                         <p>Phone: 01305573617</p>
                         <p>Email: joinwork222@gmail.com</p>
                     </div>
@@ -67,7 +67,7 @@ const Foter = () => {
             </div>
             <div className="text-center mt-4">
             <UpdateNotification></UpdateNotification>
-                <p className="text-sm">© 2024 Join Work.org All Rights Reserved.</p>
+                <p className="text-sm">© 2025-26 Join Work.org All Rights Reserved.</p>
             </div>
         </footer>
             
