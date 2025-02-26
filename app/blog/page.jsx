@@ -28,13 +28,13 @@ export default function BlogPostForm() {
         image,
         createdAt
     }
-    // console.log(formData)
-//     const formData = new FormData()
-//     formData.append('title',title)
-//     formData.append('content',content)
-//     if(image){
-//  formData.append('image',image)
-//     }
+     console.log(formData)
+     const formData = new FormData()
+     formData.append('title',title)
+     formData.append('content',content)
+     if(image){
+  formData.append('image',image)
+     }
 
     const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_API_URL}/api/post`,{
       next: {
