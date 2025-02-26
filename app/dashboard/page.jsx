@@ -1,5 +1,5 @@
-import React from 'react';
-import Dashbord from '../componet/Dashbord';
+'use client'
+
 
 
 const get = async ()=>{
