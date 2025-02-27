@@ -26,7 +26,7 @@ const Committee = () => {
                         <h3 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
                   <title>         <a href="#">Mohammad Farhad Uddin</a></title>
                         </h3>
-                        <span className="text-gray-500 dark:text-gray-400">CEO & Web Developer</span>
+                      <title>  <span className="text-gray-500 dark:text-gray-400">CEO & Web Developer</span></title>
                         
                         <ul className="flex space-x-4 sm:mt-0">
                             <li>
