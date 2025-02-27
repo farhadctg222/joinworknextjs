@@ -12,8 +12,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: 'join work',
-  description: 'JoinWork.org ন্যায্যমূল্যে স্বাস্থ্যকর খাবার সরবরাহ করে, যাতে সবাই সহজে পুষ্টিকর আহার পেতে পারে। আমাদের লক্ষ্য সবার জন্য সাশ্রয়ী মূল্যে খাবার নিশ্চিত করা।
- ',
+  description: 'JoinWork.org ন্যায্যমূল্যে স্বাস্থ্যকর খাবার সরবরাহ করে, যাতে সবাই সহজে পুষ্টিকর আহার পেতে পারে। আমাদের লক্ষ্য সবার জন্য সাশ্রয়ী মূল্যে খাবার নিশ্চিত করা',
 }
 export default function RootLayout({ children }) {
   return (
