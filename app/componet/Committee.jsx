@@ -24,7 +24,7 @@ const Committee = () => {
                     <Image src={pic3} className="w-full rounded-lg h-50 sm:rounded-none sm:rounded-l-lg" placeholder="blur" alt="md minhaz" ></Image></a>
                     <div className="p-5">
                         <h3 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                  <title>         <a href="#">Mohammad Farhad Uddin</a></title>
+                           <a href="#"><title>  Mohammad Farhad Uddin</title> </a>
                         </h3>
                       <title>  <span className="text-gray-500 dark:text-gray-400">CEO & Web Developer</span></title>
                         
