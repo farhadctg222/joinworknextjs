@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
 
 
 
-    <Head>
+    
       <title>JoinWork.org - ন্যায্যমূল্যে পুষ্টিকর খাবার</title>
       <meta name="description" content="JoinWork.org ন্যায্যমূল্যে পুষ্টিকর খাবার সরবরাহ করে, যাতে সবাই সুস্বাদু ও স্বাস্থ্যকর খাবার পেতে পারে।" />
       <meta name="keywords" content="ন্যায্যমূল্য খাবার, কম খরচে খাবার, পুষ্টিকর খাবার, JoinWork, সাশ্রয়ী মূল্যে খাবার" />
@@ -44,7 +44,7 @@ export default function RootLayout({ children }) {
 
       {/* Favicon */}
       <link rel="icon" href="/favicon.ico" />
-    </Head>
+    
 
      
 
