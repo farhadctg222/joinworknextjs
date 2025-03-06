@@ -67,8 +67,9 @@ const Foter = () => {
             </div>
             <div className="text-center mt-4">
             <UpdateNotification></UpdateNotification>
-                <p className="text-sm">© 2025-26 Join Work.org All Rights Reserved.</p>
-            </div>
+                <footer className="bg-gray-900 text-white p-4 text-center">
+      <p>© 2025 JoinWork.org | সকল অধিকার সংরক্ষিত</p>
+    </footer> </div>
         </footer>
             
         </div>
