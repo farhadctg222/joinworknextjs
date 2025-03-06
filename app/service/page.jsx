@@ -1,8 +1,8 @@
 
 const services = [
-  { id: 1, name: "মাছ-ভাত", category: "খাবার", price: "৫৫ টাকা", location: "আগ্রাবাদ" },
-  { id: 2, name: "ডা. করিম", category: "ডাক্তার", price: "৫০০ টাকা", location: "চান্দগাঁও" },
-  { id: 3, name: "এড. রুমানা", category: "আইনজীবী", price: "৭০০ টাকা", location: "জিইসি" }
+  { id: 1, name: "মাছ-ভাত", category: "খাবার", price: "৭০ টাকা", location: "আগ্রাবাদ" },
+  { id: 2, name: "মুরগী-ভাত", category: "খাবার", price: "৬৫ টাকা", location: "কোতোয়ালি" },
+  { id: 3, name: "ভাত-ডাল-সবজি", category: " খাবার", price: "৬৫ টাকা", location: "চকবাজার" }
 ];
 
 export default function Services() {
