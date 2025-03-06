@@ -1,9 +1,69 @@
 
-const services = [
-  { id: 1, name: "মাছ-ভাত", category: "খাবার", price: "৭০ টাকা", location: "আগ্রাবাদ" },
-  { id: 2, name: "মুরগী-ভাত", category: "খাবার", price: "৬৫ টাকা", location: "কোতোয়ালি" },
-  { id: 3, name: "ভাত-ডাল-সবজি", category: " খাবার", price: "৬৫ টাকা", location: "চকবাজার" }
-];
+const services =[
+  {
+    "id": 1,
+    "name": "মাছ-ভাত",
+    "category": "খাবার",
+    "price": "৭০ টাকা",
+    "location": "আগ্রাবাদ"
+  },
+  {
+    "id": 2,
+    "name": "মুরগী-ভাত",
+    "category": "খাবার",
+    "price": "৭০ টাকা",
+    "location": "আগ্রাবাদ"
+  },
+  {
+    "id": 3,
+    "name": "সবজি-ডাল-ভাত",
+    "category": "খাবার",
+    "price": "৩৫ টাকা",
+    "location": "আগ্রাবাদ"
+  },
+  {
+    "id": 4,
+    "name": "মাছ-ভাত",
+    "category": "খাবার",
+    "price": "৭০ টাকা",
+    "location": "চকবাজার"
+  },
+  {
+    "id": 5,
+    "name": "মুরগী-ভাত",
+    "category": "খাবার",
+    "price": "৭০ টাকা",
+    "location": "চকবাজার"
+  },
+  {
+    "id": 6,
+    "name": "সবজি-ডাল-ভাত",
+    "category": "খাবার",
+    "price": "৩৫ টাকা",
+    "location": "চকবাজার"
+  },
+  {
+    "id": 7,
+    "name": "মাছ-ভাত",
+    "category": "খাবার",
+    "price": "৭০ টাকা",
+    "location": "কোতোয়ালি"
+  },
+  {
+    "id": 8,
+    "name": "মুরগী-ভাত",
+    "category": "খাবার",
+    "price": "৭০ টাকা",
+    "location": "কোতোয়ালি"
+  },
+  {
+    "id": 9,
+    "name": "সবজি-ডাল-ভাত",
+    "category": "খাবার",
+    "price": "৩৫ টাকা",
+    "location": "কোতোয়ালি"
+  }
+]
 
 
 
