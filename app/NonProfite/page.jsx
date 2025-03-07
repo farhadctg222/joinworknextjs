@@ -1,5 +1,11 @@
 import React from 'react';
 
+
+export const metadata = {
+  title: 'সাশ্রয়ী মূল্যের সার্ভিস প্ল্যাটফর্ম',
+    content:'ন্যায্যমূল্যে খাবার, ডাক্তার, আইনজীবী ও সামাজিক সহায়তা'
+}
+
 const page = () => {
     return (
         <div>
